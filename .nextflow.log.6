@@ -1,0 +1,100 @@
+Nov-26 14:08:09.676 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf --inputDir /home/jcorvi/DEBBIE_DATA/relevant_abstracts/ --baseDir /home/jcorvi/DEBBIE_DATA/
+Nov-26 14:08:09.756 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.01.0
+Nov-26 14:08:09.768 [main] INFO  nextflow.cli.CmdRun - Launching `/home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf` [sad_avogadro] - revision: ab5f3e9c2f
+Nov-26 14:08:09.778 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jcorvi/projects/debbie/debbie-pipeline/nextflow.config
+Nov-26 14:08:09.778 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jcorvi/projects/debbie/debbie-pipeline/nextflow.config
+Nov-26 14:08:09.797 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Nov-26 14:08:10.086 [main] DEBUG nextflow.Session - Session uuid: 4b0a4bcb-0fc9-476b-ae54-e3dc8d7f4d1d
+Nov-26 14:08:10.086 [main] DEBUG nextflow.Session - Run name: sad_avogadro
+Nov-26 14:08:10.087 [main] DEBUG nextflow.Session - Executor pool size: 8
+Nov-26 14:08:10.109 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.01.0 build 5050
+  Modified: 22-01-2019 11:19 UTC (12:19 CEST)
+  System: Linux 4.15.0-66-generic
+  Runtime: Groovy 2.5.5 on OpenJDK 64-Bit Server VM 11.0.3+7-Ubuntu-1ubuntu218.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 25868@bsclife022 [84.88.51.211]
+  CPUs: 8 - Mem: 62.8 GB (12.4 GB) - Swap: 64 GB (29.8 GB)
+Nov-26 14:08:10.128 [main] DEBUG nextflow.Session - Work-dir: /home/jcorvi/projects/debbie/debbie-pipeline/work [ext2/ext3]
+Nov-26 14:08:10.128 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jcorvi/projects/debbie/debbie-pipeline/bin
+Nov-26 14:08:10.496 [main] DEBUG nextflow.Session - Session start invoked
+Nov-26 14:08:10.499 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Nov-26 14:08:10.500 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Nov-26 14:08:10.775 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-26 14:08:10.780 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `umls_config` -- Initialise it to a default value eg. `params.umls_config = some_value`
+Nov-26 14:08:10.780 [main] INFO  nextflow.Nextflow - 
+The input directory is: /home/jcorvi/DEBBIE_DATA/relevant_abstracts/, Contains the pdf to be processed.
+Base directory to use: /home/jcorvi/DEBBIE_DATA/, This directory is used together with the pipeline name (-name parameter) output the results.
+The output will be located at /home/jcorvi/DEBBIE_DATA//sad_avogadro
+
+UMLS configuration path: null
+
+Nov-26 14:08:10.838 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `paramsout` -- Initialise it to a default value eg. `params.paramsout = some_value`
+Nov-26 14:08:10.888 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:nlp_standard_preprocessing` matches process nlp_standard_preprocessing
+Nov-26 14:08:10.890 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:08:10.890 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:08:10.895 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:08:10.897 [main] INFO  nextflow.executor.Executor - [warm up] executor > local
+Nov-26 14:08:10.918 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=62.8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Nov-26 14:08:10.922 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: LocalPollingMonitor
+Nov-26 14:08:10.924 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-26 14:08:10.930 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: local
+Nov-26 14:08:10.967 [main] DEBUG nextflow.Session - >>> barrier register (process: nlp_standard_preprocessing)
+Nov-26 14:08:10.969 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > nlp_standard_preprocessing -- maxForks: 8
+Nov-26 14:08:10.995 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:umls_tagger` matches process umls_tagger
+Nov-26 14:08:10.995 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:08:10.995 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:08:10.995 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:08:10.996 [main] DEBUG nextflow.Session - >>> barrier register (process: umls_tagger)
+Nov-26 14:08:10.996 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > umls_tagger -- maxForks: 8
+Nov-26 14:08:10.998 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:medical_materials` matches process medical_materials
+Nov-26 14:08:10.999 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:08:10.999 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:08:10.999 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:08:11.001 [main] DEBUG nextflow.Session - >>> barrier register (process: medical_materials)
+Nov-26 14:08:11.001 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > medical_materials -- maxForks: 8
+Nov-26 14:08:11.004 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:gate_to_json` matches process gate_to_json
+Nov-26 14:08:11.004 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:08:11.004 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:08:11.004 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:08:11.005 [main] DEBUG nextflow.Session - >>> barrier register (process: gate_to_json)
+Nov-26 14:08:11.005 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > gate_to_json -- maxForks: 8
+Nov-26 14:08:11.007 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Nov-26 14:08:11.007 [main] DEBUG nextflow.Session - Session await
+Nov-26 14:08:11.109 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-26 14:08:11.112 [Task submitter] INFO  nextflow.Session - [dd/efc83c] Submitted process > nlp_standard_preprocessing (1)
+Nov-26 14:08:33.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: nlp_standard_preprocessing (1); status: COMPLETED; exit: 0; error: -; workDir: /home/jcorvi/projects/debbie/debbie-pipeline/work/dd/efc83c9317a2355e94a085ab027353]
+Nov-26 14:08:33.863 [Actor Thread 3] DEBUG nextflow.Session - <<< barrier arrive (process: nlp_standard_preprocessing)
+Nov-26 14:08:33.886 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-26 14:08:33.886 [Task submitter] INFO  nextflow.Session - [ca/02285b] Submitted process > umls_tagger (1)
+Nov-26 14:09:47.870 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: umls_tagger (1); status: COMPLETED; exit: 0; error: -; workDir: /home/jcorvi/projects/debbie/debbie-pipeline/work/ca/02285b4c31019536834313309b889b]
+Nov-26 14:09:47.871 [Actor Thread 3] DEBUG nextflow.Session - <<< barrier arrive (process: umls_tagger)
+Nov-26 14:09:47.880 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Nov-26 14:09:47.881 [Task submitter] INFO  nextflow.Session - [45/f3706c] Submitted process > medical_materials (1)
+Nov-26 14:10:06.832 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: medical_materials (1); status: COMPLETED; exit: 0; error: -; workDir: /home/jcorvi/projects/debbie/debbie-pipeline/work/45/f3706c4f46bdde590160049d5f1ea1]
+Nov-26 14:10:06.833 [Actor Thread 3] DEBUG nextflow.Session - <<< barrier arrive (process: medical_materials)
+Nov-26 14:10:06.849 [Actor Thread 9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'gate_to_json (1)'
+
+Caused by:
+  Unknown variable 'gate_export_to_json_output_folder' -- Make sure you didn't misspell it or define somewhere in the script before use it
+
+Source block:
+  """
+  ades-export-to-json -i $input_gate_to_json -o $gate_export_to_json_output_folder -a BSC -ar TREATMENT_RELATED_FINDINGS
+  
+  """
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Nov-26 14:10:06.851 [Actor Thread 9] DEBUG nextflow.Session - Session aborted -- Cause: Process `null` script contains error(s)
+Nov-26 14:10:06.873 [Actor Thread 9] DEBUG nextflow.Session - The following nodes are still active:
+[process] gate_to_json
+  status=ACTIVE
+  port 0: (queue) closed; channel: input_gate_to_json
+  port 1: (cntrl) -     ; channel: $
+
+Nov-26 14:10:06.874 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local)
+Nov-26 14:10:06.874 [main] DEBUG nextflow.Session - Session await > all process finished
+Nov-26 14:10:06.875 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Nov-26 14:10:06.878 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=3; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=1m 55s; failedDuration=0ms; cachedDuration=0ms]
+Nov-26 14:10:06.883 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Nov-26 14:10:07.025 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

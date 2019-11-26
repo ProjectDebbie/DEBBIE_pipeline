@@ -1,0 +1,137 @@
+Nov-26 14:51:20.050 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf --inputDir /home/jcorvi/DEBBIE_DATA/relevant_abstracts/ --baseDir /home/jcorvi/DEBBIE_DATA/
+Nov-26 14:51:20.132 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 19.01.0
+Nov-26 14:51:20.144 [main] INFO  nextflow.cli.CmdRun - Launching `/home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf` [marvelous_gilbert] - revision: 560e6b51a1
+Nov-26 14:51:20.157 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jcorvi/projects/debbie/debbie-pipeline/nextflow.config
+Nov-26 14:51:20.158 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jcorvi/projects/debbie/debbie-pipeline/nextflow.config
+Nov-26 14:51:20.178 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Nov-26 14:51:20.488 [main] DEBUG nextflow.Session - Session uuid: d484cff6-619a-4b6d-87b4-8e1eb60ceaf2
+Nov-26 14:51:20.488 [main] DEBUG nextflow.Session - Run name: marvelous_gilbert
+Nov-26 14:51:20.488 [main] DEBUG nextflow.Session - Executor pool size: 8
+Nov-26 14:51:20.516 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 19.01.0 build 5050
+  Modified: 22-01-2019 11:19 UTC (12:19 CEST)
+  System: Linux 4.15.0-66-generic
+  Runtime: Groovy 2.5.5 on OpenJDK 64-Bit Server VM 11.0.3+7-Ubuntu-1ubuntu218.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 739@bsclife022 [84.88.51.211]
+  CPUs: 8 - Mem: 62.8 GB (1.5 GB) - Swap: 64 GB (29.8 GB)
+Nov-26 14:51:20.536 [main] DEBUG nextflow.Session - Work-dir: /home/jcorvi/projects/debbie/debbie-pipeline/work [ext2/ext3]
+Nov-26 14:51:20.536 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jcorvi/projects/debbie/debbie-pipeline/bin
+Nov-26 14:51:20.850 [main] DEBUG nextflow.Session - Session start invoked
+Nov-26 14:51:20.852 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Nov-26 14:51:20.853 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Nov-26 14:51:21.114 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Nov-26 14:51:21.118 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `umls_config` -- Initialise it to a default value eg. `params.umls_config = some_value`
+Nov-26 14:51:21.119 [main] INFO  nextflow.Nextflow - 
+The input directory is: /home/jcorvi/DEBBIE_DATA/relevant_abstracts/, Contains the pdf to be processed.
+Base directory to use: /home/jcorvi/DEBBIE_DATA/, This directory is used together with the pipeline name (-name parameter) output the results.
+The output will be located at /home/jcorvi/DEBBIE_DATA//marvelous_gilbert
+
+UMLS configuration path: null
+
+Nov-26 14:51:21.187 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `paramsout` -- Initialise it to a default value eg. `params.paramsout = some_value`
+Nov-26 14:51:21.234 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:nlp_standard_preprocessing` matches process nlp_standard_preprocessing
+Nov-26 14:51:21.236 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:51:21.236 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:51:21.241 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:51:21.243 [main] INFO  nextflow.executor.Executor - [warm up] executor > local
+Nov-26 14:51:21.280 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=62.8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Nov-26 14:51:21.284 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: LocalPollingMonitor
+Nov-26 14:51:21.284 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Nov-26 14:51:21.291 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: local
+Nov-26 14:51:21.329 [main] DEBUG nextflow.Session - >>> barrier register (process: nlp_standard_preprocessing)
+Nov-26 14:51:21.331 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > nlp_standard_preprocessing -- maxForks: 8
+Nov-26 14:51:21.356 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:umls_tagger` matches process umls_tagger
+Nov-26 14:51:21.357 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:51:21.357 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:51:21.357 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:51:21.358 [main] DEBUG nextflow.Session - >>> barrier register (process: umls_tagger)
+Nov-26 14:51:21.358 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > umls_tagger -- maxForks: 8
+Nov-26 14:51:21.364 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:medical_materials` matches process medical_materials
+Nov-26 14:51:21.364 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:51:21.364 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:51:21.364 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:51:21.365 [main] DEBUG nextflow.Session - >>> barrier register (process: medical_materials)
+Nov-26 14:51:21.365 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > medical_materials -- maxForks: 8
+Nov-26 14:51:21.367 [main] DEBUG nextflow.util.CacheHelper - Config settings `withName:gate_to_json` matches process gate_to_json
+Nov-26 14:51:21.367 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Nov-26 14:51:21.367 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Nov-26 14:51:21.367 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Nov-26 14:51:21.368 [main] DEBUG nextflow.Session - >>> barrier register (process: gate_to_json)
+Nov-26 14:51:21.369 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > gate_to_json -- maxForks: 8
+Nov-26 14:51:21.372 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown variable 'ades_export_to_json_output_ch'
+Nov-26 14:51:21.388 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local)
+Nov-26 14:51:21.393 [main] DEBUG nextflow.Session - The following nodes are still active:
+[process] nlp_standard_preprocessing
+  status=ACTIVE
+  port 0: (queue) closed; channel: input_nlp_standard_preprocessing
+  port 1: (cntrl) -     ; channel: $
+
+[process] umls_tagger
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: input_umls
+  port 1: (cntrl) -     ; channel: $
+
+[process] medical_materials
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: input_medical_materials
+  port 1: (cntrl) -     ; channel: $
+
+[process] gate_to_json
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: input_gate_to_json
+  port 1: (cntrl) -     ; channel: $
+
+Nov-26 14:51:21.488 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: Unknown variable 'ades_export_to_json_output_ch'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:265)
+	at nextflow.processor.ProcessConfig.getProperty(ProcessConfig.groovy:268)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:190)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:319)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:309)
+	at groovy.lang.Closure.getProperty(Closure.java:294)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:309)
+	at _nf_script_b47e1c0f$_run_closure5.doCall(_nf_script_b47e1c0f:372)
+	at _nf_script_b47e1c0f$_run_closure5.doCall(_nf_script_b47e1c0f)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:104)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:326)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:264)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:41)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:119)
+	at nextflow.processor.ProcessFactory.createProcessor(ProcessFactory.groovy:218)
+	at nextflow.processor.ProcessFactory.createProcessor(ProcessFactory.groovy)
+	at nextflow.processor.ProcessFactory$createProcessor.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at nextflow.processor.ProcessFactory$createProcessor.call(Unknown Source)
+	at nextflow.script.BaseScript.process(BaseScript.groovy:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at _nf_script_b47e1c0f.run(_nf_script_b47e1c0f:370)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:382)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:170)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:240)
+	at nextflow.cli.Launcher.run(Launcher.groovy:445)
+	at nextflow.cli.Launcher.main(Launcher.groovy:622)

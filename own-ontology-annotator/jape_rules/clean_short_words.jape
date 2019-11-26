@@ -1,0 +1,18 @@
+Phase:secondphase
+Input: Biomaterial BioactiveSubstance Structure ManufacturedObject Application Features AsscoiatedBiologicalProcess cell Tissue AdverseEffects ResearchTechnique
+Options: control = all
+Rule: delete_rule
+(
+{Biomaterial} | {BioactiveSubstance} | {Structure} | {ManufacturedObject} | {Application} | {Features} | {AsscoiatedBiologicalProcess} | {cell} | {Tissue} | {AdverseEffects} | {ResearchTechnique}
+)
+:short_annotations_delete
+-->
+{
+	gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("short_annotations_delete");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	// get the offsets
+	Long length = lookup.lastNode().getOffset() - lookup.firstNode().getOffset();
+	if (length < 3)  {
+		inputAS.remove(ann);
+ 	}
+}
