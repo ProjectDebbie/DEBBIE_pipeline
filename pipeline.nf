@@ -372,7 +372,7 @@ process import_json_to_mongo {
     file input_import_json_to_mongo from gate_export_to_json_output_ch
     	
     """
-    import-json-to-mongo -i $input_import_json_to_mongo -mongoServer 127.0.0.1 -mongoPort 27017 -mongoClient debbie -collection abstract_annotated
+    import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://127.0.0.1:27017  -mongoDatabase debbie -collection abstract_annotated
 	
     """
 }
