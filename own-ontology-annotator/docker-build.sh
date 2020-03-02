@@ -27,13 +27,12 @@ else
 	apt-get install openjdk-8-jdk git maven
 fi
 
-git clone --depth 1 https://github.com/inab/docker-textmining-tools.git nlp_gate_generic_component
-cd nlp_gate_generic_component
-git filter-branch --prune-empty --subdirectory-filter nlp-gate-generic-component HEAD
+git clone https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-gate-generic-component.git
+cd nlp-gate-generic-component
 mvn clean install -DskipTests
 cd ..
 #rename jar
-mv nlp_gate_generic_component/target/nlp-gate-generic-component-0.0.1-SNAPSHOT-jar-with-dependencies.jar nlp-gate-generic-component-${MEDICAL_MATERIALS_TAGGER_VERSION}.jar
+mv nlp-gate-generic-component/target/nlp-gate-generic-component-0.0.1-SNAPSHOT-jar-with-dependencies.jar nlp-gate-generic-component-${MEDICAL_MATERIALS_TAGGER_VERSION}.jar
 
 cat > /usr/local/bin/medical-materials <<EOF
 #!/bin/sh
