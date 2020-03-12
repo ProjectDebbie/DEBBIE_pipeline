@@ -7,7 +7,7 @@ Options: control = appelt
 
 Rule: label_mapping
 (
-{Lookup.minorType=="MY_ONTOLOGY"}
+{Lookup.minorType=="DEB_ONTOLOGY"}
 )
 :lookup
 -->
@@ -19,7 +19,7 @@ Rule: label_mapping
  	String content = stringFor(doc, ann);
  	gate.FeatureMap features = Factory.newFeatureMap();
 	features.put("text",content);
-	features.put("SOURCE","MY_ONTOLOGY");
+	features.put("SOURCE","DEB_ONTOLOGY");
 	features.putAll(lookupFeatures);
 	features.remove("majorType");
  	features.remove("minorType");
