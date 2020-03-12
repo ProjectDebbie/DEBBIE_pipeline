@@ -8,12 +8,6 @@ docker build -t own-ontology-annotator:1.0 own-ontology-annotator
 
 cd $work_folder
 
-if [ ! -d "nlp-standard-preprocessing" ]; then
-  git clone https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-standard-preprocessing.git
-  docker build -t nlp-standard-preprocessing:1.0 nlp-standard-preprocessing
-  rm -f nlp-standard-preprocessing -R
-fi
-
 #umls-tagger
 if [ ! -d "umls-tagger" ]; then
   git clone https://gitlab.bsc.es/inb/text-mining/bio-tools/umls-tagger.git
@@ -28,15 +22,10 @@ if [ ! -d "gate_to_json" ]; then
   rm -f gate_to_json -R
 fi
 
-#import-json-to-mongo
-if [ ! -d "import-json-to-mongo" ]; then
-  git clone https://gitlab.bsc.es/inb/text-mining/generic-tools/import-json-to-mongo.git
-  docker build -t import-json-to-mongo:1.0 import-json-to-mongo	 
-  rm -f import-json-to-mongo -R
-fi
-
 #In the future download mongo and put inside annotated relevant abstracts
 #docker pull mongo:4.0.4
 #docker run -d -p 27017-27019:27017-27019 -v ~/mongo-data:/data/db --name mongodb mongo:4.0.4
 cd ..
-/home/jcorvi/nextflow_installation/nextflow run /home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf --inputDir /home/jcorvi/DEBBIE_DATA/relevant_abstracts/ --baseDir /home/jcorvi/DEBBIE_DATA/
+
+/home/jcorvi/nextflow_installation/nextflow run /home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf --inputDir /home/jcorvi/DEBBIE_DATA/pipeline_test/relevant_with_year --baseDir /home/jcorvi/DEBBIE_DATA/pipeline_test/results_12_03_2020/ --umls_config umls-annotation/config.properties
+

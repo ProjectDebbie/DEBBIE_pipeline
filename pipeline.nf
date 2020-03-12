@@ -1,8 +1,6 @@
 #!/usr/bin/env nextflow
 
 
-//./nextflow run /home/jcorvi/projects/pdf_preprocessing/docker-textmining-tools/pipeline_medical_materials.nf -c /home/jcorvi/projects/pdf_preprocessing/docker-textmining-tools/nextflow_medical_materials.config --inputDir /home/jcorvi/medicalMaterials/pipeline/ --baseDir /home/jcorvi/medicalMaterials/pipeline/ --umls_tagger.config umls-annotation/config.properties
-
 log.info """
 The input directory is: ${params.inputDir}, Contains the pdf to be processed.
 Base directory to use: ${params.baseDir}, This directory is used together with the pipeline name (-name parameter) output the results.
@@ -32,7 +30,7 @@ steps = [:]
 
 params.umls_tagger = [
 	instalation_folder: "/home/jcorvi/umls-2018AB-full/2018AB-full/MEDICAL_MATERIALS/2018AB/META",
-	config: "/home/jcorvi/medicalMaterials/config.properties"
+	config: "/home/jcorvi/projects/debbie/debbie-pipeline/umls-annotator/config.properties"
 	//config: "${params.umls_config}"
 ]
 
