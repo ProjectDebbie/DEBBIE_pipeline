@@ -57,7 +57,8 @@ pom.xml.tag
 
 #custom
 pos/
-
+.nextflow/
+work/
 /.nextflow.log
 /.nextflow.log.1
 /.nextflow.log.2
