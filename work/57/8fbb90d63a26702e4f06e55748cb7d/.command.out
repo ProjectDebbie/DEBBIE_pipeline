@@ -1,0 +1,798 @@
+App::processTagger :: INIT 
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo375.txt
+ Annotation document execution time  5940 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo68.txt
+ Annotation document execution time  1646 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo361.txt
+ Annotation document execution time  460 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo22.txt
+ Annotation document execution time  1060 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo169.txt
+ Annotation document execution time  1186 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo191.txt
+ Annotation document execution time  1510 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo255.txt
+ Annotation document execution time  656 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo151.txt
+ Annotation document execution time  1729 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo294.txt
+ Annotation document execution time  607 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo40.txt
+ Annotation document execution time  1081 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo200.txt
+ Annotation document execution time  536 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo385.txt
+ Annotation document execution time  475 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo7.txt
+ Annotation document execution time  851 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo384.txt
+ Annotation document execution time  279 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo291.txt
+ Annotation document execution time  957 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo187.txt
+ Annotation document execution time  564 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo230.txt
+ Annotation document execution time  908 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo300.txt
+ Annotation document execution time  494 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo378.txt
+ Annotation document execution time  621 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo250.txt
+ Annotation document execution time  1387 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo346.txt
+ Annotation document execution time  382 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo208.txt
+ Annotation document execution time  791 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo164.txt
+ Annotation document execution time  775 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo109.txt
+ Annotation document execution time  778 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo215.txt
+ Annotation document execution time  483 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo347.txt
+ Annotation document execution time  597 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo172.txt
+ Annotation document execution time  1050 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo278.txt
+ Annotation document execution time  725 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo203.txt
+ Annotation document execution time  578 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo173.txt
+ Annotation document execution time  378 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo327.txt
+ Annotation document execution time  416 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo343.txt
+ Annotation document execution time  837 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo275.txt
+ Annotation document execution time  394 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo390.txt
+ Annotation document execution time  306 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo106.txt
+ Annotation document execution time  884 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo167.txt
+ Annotation document execution time  755 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo188.txt
+ Annotation document execution time  2166 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo227.txt
+ Annotation document execution time  616 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo63.txt
+ Annotation document execution time  1000 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo89.txt
+ Annotation document execution time  537 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo23.txt
+ Annotation document execution time  903 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo78.txt
+ Annotation document execution time  872 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo186.txt
+ Annotation document execution time  992 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo83.txt
+ Annotation document execution time  1020 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo211.txt
+ Annotation document execution time  1002 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo135.txt
+ Annotation document execution time  720 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo181.txt
+ Annotation document execution time  1087 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo97.txt
+ Annotation document execution time  639 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo98.txt
+ Annotation document execution time  667 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo91.txt
+ Annotation document execution time  646 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo349.txt
+ Annotation document execution time  642 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo42.txt
+ Annotation document execution time  946 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo298.txt
+ Annotation document execution time  902 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo57.txt
+ Annotation document execution time  973 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo195.txt
+ Annotation document execution time  913 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo319.txt
+ Annotation document execution time  67 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo166.txt
+ Annotation document execution time  524 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo391.txt
+ Annotation document execution time  766 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo398.txt
+ Annotation document execution time  946 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo237.txt
+ Annotation document execution time  702 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo99.txt
+ Annotation document execution time  881 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo120.txt
+ Annotation document execution time  899 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo171.txt
+ Annotation document execution time  1431 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo131.txt
+ Annotation document execution time  956 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo277.txt
+ Annotation document execution time  811 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo48.txt
+ Annotation document execution time  803 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo320.txt
+ Annotation document execution time  524 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo199.txt
+ Annotation document execution time  1010 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo155.txt
+ Annotation document execution time  623 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo260.txt
+ Annotation document execution time  890 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo88.txt
+ Annotation document execution time  337 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo41.txt
+ Annotation document execution time  851 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo240.txt
+ Annotation document execution time  783 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo263.txt
+ Annotation document execution time  988 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo377.txt
+ Annotation document execution time  711 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo368.txt
+ Annotation document execution time  819 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo183.txt
+ Annotation document execution time  511 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo62.txt
+ Annotation document execution time  780 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo276.txt
+ Annotation document execution time  344 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo264.txt
+ Annotation document execution time  762 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo312.txt
+ Annotation document execution time  433 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo64.txt
+ Annotation document execution time  1066 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo272.txt
+ Annotation document execution time  809 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo193.txt
+ Annotation document execution time  1184 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo353.txt
+ Annotation document execution time  255 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo292.txt
+ Annotation document execution time  541 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo371.txt
+ Annotation document execution time  520 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo134.txt
+ Annotation document execution time  646 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo248.txt
+ Annotation document execution time  291 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo356.txt
+ Annotation document execution time  741 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo358.txt
+ Annotation document execution time  1027 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo259.txt
+ Annotation document execution time  442 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo129.txt
+ Annotation document execution time  680 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo279.txt
+ Annotation document execution time  542 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo111.txt
+ Annotation document execution time  896 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo329.txt
+ Annotation document execution time  645 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo212.txt
+ Annotation document execution time  790 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo140.txt
+ Annotation document execution time  824 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo13.txt
+ Annotation document execution time  835 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo95.txt
+ Annotation document execution time  1002 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo242.txt
+ Annotation document execution time  547 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo85.txt
+ Annotation document execution time  710 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo360.txt
+ Annotation document execution time  499 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo233.txt
+ Annotation document execution time  1113 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo337.txt
+ Annotation document execution time  771 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo254.txt
+ Annotation document execution time  317 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo52.txt
+ Annotation document execution time  965 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo56.txt
+ Annotation document execution time  896 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo381.txt
+ Annotation document execution time  507 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo70.txt
+ Annotation document execution time  1138 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo132.txt
+ Annotation document execution time  527 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo286.txt
+ Annotation document execution time  484 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo383.txt
+ Annotation document execution time  380 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo224.txt
+ Annotation document execution time  645 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo96.txt
+ Annotation document execution time  758 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo197.txt
+ Annotation document execution time  982 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo157.txt
+ Annotation document execution time  887 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo348.txt
+ Annotation document execution time  264 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo219.txt
+ Annotation document execution time  672 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo189.txt
+ Annotation document execution time  522 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo268.txt
+ Annotation document execution time  431 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo229.txt
+ Annotation document execution time  551 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo126.txt
+ Annotation document execution time  1313 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo33.txt
+ Annotation document execution time  1623 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo373.txt
+ Annotation document execution time  444 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo395.txt
+ Annotation document execution time  458 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo210.txt
+ Annotation document execution time  340 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo38.txt
+ Annotation document execution time  1327 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo228.txt
+ Annotation document execution time  666 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo271.txt
+ Annotation document execution time  1038 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo251.txt
+ Annotation document execution time  835 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo308.txt
+ Annotation document execution time  936 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo288.txt
+ Annotation document execution time  761 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo367.txt
+ Annotation document execution time  353 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo238.txt
+ Annotation document execution time  860 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo243.txt
+ Annotation document execution time  848 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo154.txt
+ Annotation document execution time  496 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo280.txt
+ Annotation document execution time  976 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo364.txt
+ Annotation document execution time  344 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo304.txt
+ Annotation document execution time  927 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo207.txt
+ Annotation document execution time  642 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo351.txt
+ Annotation document execution time  429 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo93.txt
+ Annotation document execution time  1265 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo59.txt
+ Annotation document execution time  945 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo153.txt
+ Annotation document execution time  965 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo214.txt
+ Annotation document execution time  898 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo216.txt
+ Annotation document execution time  387 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo222.txt
+ Annotation document execution time  569 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo331.txt
+ Annotation document execution time  924 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo192.txt
+ Annotation document execution time  621 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo44.txt
+ Annotation document execution time  808 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo220.txt
+ Annotation document execution time  822 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo374.txt
+ Annotation document execution time  682 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo244.txt
+ Annotation document execution time  563 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo150.txt
+ Annotation document execution time  699 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo261.txt
+ Annotation document execution time  699 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo257.txt
+ Annotation document execution time  899 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo267.txt
+ Annotation document execution time  1905 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo340.txt
+ Annotation document execution time  650 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo221.txt
+ Annotation document execution time  538 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo266.txt
+ Annotation document execution time  668 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo232.txt
+ Annotation document execution time  800 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo102.txt
+ Annotation document execution time  528 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo35.txt
+ Annotation document execution time  1410 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo5.txt
+ Annotation document execution time  1368 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo252.txt
+ Annotation document execution time  771 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo24.txt
+ Annotation document execution time  1341 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo141.txt
+ Annotation document execution time  993 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo55.txt
+ Annotation document execution time  800 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo65.txt
+ Annotation document execution time  535 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo234.txt
+ Annotation document execution time  510 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo80.txt
+ Annotation document execution time  956 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo397.txt
+ Annotation document execution time  862 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo297.txt
+ Annotation document execution time  1086 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo145.txt
+ Annotation document execution time  1711 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo2.txt
+ Annotation document execution time  1077 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo209.txt
+ Annotation document execution time  991 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo36.txt
+ Annotation document execution time  838 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo136.txt
+ Annotation document execution time  547 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo51.txt
+ Annotation document execution time  719 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo341.txt
+ Annotation document execution time  739 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo12.txt
+ Annotation document execution time  743 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo121.txt
+ Annotation document execution time  950 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo27.txt
+ Annotation document execution time  840 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo17.txt
+ Annotation document execution time  898 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo235.txt
+ Annotation document execution time  839 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo178.txt
+ Annotation document execution time  514 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo31.txt
+ Annotation document execution time  1384 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo290.txt
+ Annotation document execution time  942 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo54.txt
+ Annotation document execution time  685 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo287.txt
+ Annotation document execution time  678 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo138.txt
+ Annotation document execution time  521 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo218.txt
+ Annotation document execution time  351 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo380.txt
+ Annotation document execution time  530 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo84.txt
+ Annotation document execution time  658 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo74.txt
+ Annotation document execution time  721 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo34.txt
+ Annotation document execution time  368 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo19.txt
+ Annotation document execution time  1083 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo226.txt
+ Annotation document execution time  593 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo175.txt
+ Annotation document execution time  1523 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo161.txt
+ Annotation document execution time  659 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo72.txt
+ Annotation document execution time  680 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo58.txt
+ Annotation document execution time  512 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo103.txt
+ Annotation document execution time  749 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo325.txt
+ Annotation document execution time  774 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo29.txt
+ Annotation document execution time  1484 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo123.txt
+ Annotation document execution time  888 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo316.txt
+ Annotation document execution time  588 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo313.txt
+ Annotation document execution time  470 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo168.txt
+ Annotation document execution time  581 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo53.txt
+ Annotation document execution time  950 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo314.txt
+ Annotation document execution time  782 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo158.txt
+ Annotation document execution time  1017 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo324.txt
+ Annotation document execution time  754 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo335.txt
+ Annotation document execution time  953 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo110.txt
+ Annotation document execution time  684 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo76.txt
+ Annotation document execution time  968 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo1.txt
+ Annotation document execution time  824 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo25.txt
+ Annotation document execution time  539 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo269.txt
+ Annotation document execution time  1599 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo336.txt
+ Annotation document execution time  565 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo107.txt
+ Annotation document execution time  619 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo332.txt
+ Annotation document execution time  688 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo302.txt
+ Annotation document execution time  655 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo357.txt
+ Annotation document execution time  923 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo389.txt
+ Annotation document execution time  377 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo323.txt
+ Annotation document execution time  440 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo284.txt
+ Annotation document execution time  572 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo174.txt
+ Annotation document execution time  576 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo190.txt
+ Annotation document execution time  527 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo46.txt
+ Annotation document execution time  957 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo37.txt
+ Annotation document execution time  715 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo387.txt
+ Annotation document execution time  273 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo79.txt
+ Annotation document execution time  770 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo147.txt
+ Annotation document execution time  522 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo125.txt
+ Annotation document execution time  590 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo317.txt
+ Annotation document execution time  1367 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo4.txt
+ Annotation document execution time  703 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo344.txt
+ Annotation document execution time  872 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo20.txt
+ Annotation document execution time  370 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo394.txt
+ Annotation document execution time  1087 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo142.txt
+ Annotation document execution time  717 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo100.txt
+ Annotation document execution time  1546 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo355.txt
+ Annotation document execution time  634 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo205.txt
+ Annotation document execution time  829 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo318.txt
+ Annotation document execution time  607 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo14.txt
+ Annotation document execution time  895 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo258.txt
+ Annotation document execution time  651 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo116.txt
+ Annotation document execution time  1447 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo124.txt
+ Annotation document execution time  852 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo139.txt
+ Annotation document execution time  1036 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo247.txt
+ Annotation document execution time  603 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo73.txt
+ Annotation document execution time  802 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo239.txt
+ Annotation document execution time  539 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo148.txt
+ Annotation document execution time  608 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo283.txt
+ Annotation document execution time  1396 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo77.txt
+ Annotation document execution time  560 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo307.txt
+ Annotation document execution time  912 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo362.txt
+ Annotation document execution time  930 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo122.txt
+ Annotation document execution time  859 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo293.txt
+ Annotation document execution time  857 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo47.txt
+ Annotation document execution time  966 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo128.txt
+ Annotation document execution time  747 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo393.txt
+ Annotation document execution time  348 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo163.txt
+ Annotation document execution time  568 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo350.txt
+ Annotation document execution time  961 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo303.txt
+ Annotation document execution time  431 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo342.txt
+ Annotation document execution time  1432 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo253.txt
+ Annotation document execution time  708 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo130.txt
+ Annotation document execution time  618 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo28.txt
+ Annotation document execution time  898 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo198.txt
+ Annotation document execution time  151 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo328.txt
+ Annotation document execution time  574 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo363.txt
+ Annotation document execution time  421 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo299.txt
+ Annotation document execution time  910 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo338.txt
+ Annotation document execution time  947 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo117.txt
+ Annotation document execution time  437 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo86.txt
+ Annotation document execution time  585 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo223.txt
+ Annotation document execution time  771 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo66.txt
+ Annotation document execution time  519 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo9.txt
+ Annotation document execution time  833 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo115.txt
+ Annotation document execution time  728 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo366.txt
+ Annotation document execution time  475 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo30.txt
+ Annotation document execution time  830 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo113.txt
+ Annotation document execution time  678 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo81.txt
+ Annotation document execution time  849 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo217.txt
+ Annotation document execution time  603 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo69.txt
+ Annotation document execution time  805 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo295.txt
+ Annotation document execution time  725 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo179.txt
+ Annotation document execution time  494 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo182.txt
+ Annotation document execution time  977 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo246.txt
+ Annotation document execution time  418 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo82.txt
+ Annotation document execution time  775 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo301.txt
+ Annotation document execution time  350 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo133.txt
+ Annotation document execution time  688 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo359.txt
+ Annotation document execution time  556 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo6.txt
+ Annotation document execution time  639 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo202.txt
+ Annotation document execution time  526 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo392.txt
+ Annotation document execution time  290 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo274.txt
+ Annotation document execution time  1012 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo8.txt
+ Annotation document execution time  980 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo206.txt
+ Annotation document execution time  389 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo330.txt
+ Annotation document execution time  1083 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo32.txt
+ Annotation document execution time  829 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo67.txt
+ Annotation document execution time  841 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo159.txt
+ Annotation document execution time  662 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo39.txt
+ Annotation document execution time  887 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo71.txt
+ Annotation document execution time  818 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo105.txt
+ Annotation document execution time  662 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo236.txt
+ Annotation document execution time  425 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo108.txt
+ Annotation document execution time  801 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo311.txt
+ Annotation document execution time  587 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo194.txt
+ Annotation document execution time  700 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo382.txt
+ Annotation document execution time  649 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo249.txt
+ Annotation document execution time  747 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo196.txt
+ Annotation document execution time  714 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo143.txt
+ Annotation document execution time  796 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo369.txt
+ Annotation document execution time  290 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo45.txt
+ Annotation document execution time  765 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo3.txt
+ Annotation document execution time  779 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo94.txt
+ Annotation document execution time  708 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo11.txt
+ Annotation document execution time  1110 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo333.txt
+ Annotation document execution time  253 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo354.txt
+ Annotation document execution time  447 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo370.txt
+ Annotation document execution time  445 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo365.txt
+ Annotation document execution time  633 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo388.txt
+ Annotation document execution time  938 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo10.txt
+ Annotation document execution time  519 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo50.txt
+ Annotation document execution time  1353 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo149.txt
+ Annotation document execution time  621 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo101.txt
+ Annotation document execution time  1263 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo309.txt
+ Annotation document execution time  761 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo21.txt
+ Annotation document execution time  825 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo90.txt
+ Annotation document execution time  881 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo180.txt
+ Annotation document execution time  755 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo146.txt
+ Annotation document execution time  1065 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo61.txt
+ Annotation document execution time  922 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo282.txt
+ Annotation document execution time  956 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo289.txt
+ Annotation document execution time  786 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo245.txt
+ Annotation document execution time  739 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo75.txt
+ Annotation document execution time  457 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo165.txt
+ Annotation document execution time  809 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo144.txt
+ Annotation document execution time  772 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo265.txt
+ Annotation document execution time  1120 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo43.txt
+ Annotation document execution time  763 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo18.txt
+ Annotation document execution time  649 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo262.txt
+ Annotation document execution time  758 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo176.txt
+ Annotation document execution time  912 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo396.txt
+ Annotation document execution time  317 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo379.txt
+ Annotation document execution time  465 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo170.txt
+ Annotation document execution time  911 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo334.txt
+ Annotation document execution time  554 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo345.txt
+ Annotation document execution time  690 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo87.txt
+ Annotation document execution time  789 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo156.txt
+ Annotation document execution time  648 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo306.txt
+ Annotation document execution time  695 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo241.txt
+ Annotation document execution time  748 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo326.txt
+ Annotation document execution time  639 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo104.txt
+ Annotation document execution time  789 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo321.txt
+ Annotation document execution time  915 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo127.txt
+ Annotation document execution time  706 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo119.txt
+ Annotation document execution time  834 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo26.txt
+ Annotation document execution time  839 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo225.txt
+ Annotation document execution time  891 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo376.txt
+ Annotation document execution time  264 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo152.txt
+ Annotation document execution time  877 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo177.txt
+ Annotation document execution time  726 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo339.txt
+ Annotation document execution time  466 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo118.txt
+ Annotation document execution time  979 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo310.txt
+ Annotation document execution time  387 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo112.txt
+ Annotation document execution time  777 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo92.txt
+ Annotation document execution time  668 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo352.txt
+ Annotation document execution time  625 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo162.txt
+ Annotation document execution time  1333 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo256.txt
+ Annotation document execution time  650 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo372.txt
+ Annotation document execution time  669 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo281.txt
+ Annotation document execution time  634 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo213.txt
+ Annotation document execution time  795 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo49.txt
+ Annotation document execution time  712 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo204.txt
+ Annotation document execution time  726 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo15.txt
+ Annotation document execution time  636 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo60.txt
+ Annotation document execution time  894 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo185.txt
+ Annotation document execution time  622 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo296.txt
+ Annotation document execution time  745 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo184.txt
+ Annotation document execution time  3301 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo386.txt
+ Annotation document execution time  376 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo16.txt
+ Annotation document execution time  801 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo305.txt
+ Annotation document execution time  895 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo201.txt
+ Annotation document execution time  855 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo160.txt
+ Annotation document execution time  820 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo322.txt
+ Annotation document execution time  1181 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo270.txt
+ Annotation document execution time  761 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo137.txt
+ Annotation document execution time  545 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo231.txt
+ Annotation document execution time  692 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo114.txt
+ Annotation document execution time  648 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo315.txt
+ Annotation document execution time  565 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo285.txt
+ Annotation document execution time  1094 milliseconds
+App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/57/8fbb90d63a26702e4f06e55748cb7d/relevant_with_year/pdo273.txt
+ Annotation document execution time  1188 milliseconds
+App::process :: END 

@@ -79,7 +79,7 @@ class StepPipeline {
    }
    
    String toString(){
-   		return "Step: \n	id: " + id + "\n	" + " name: " + name + "\n	" + " inputDir: " + inputDir + "\n	" + " outputDir: " + outputDir + "\n" 
+     return "Step: \n	id: " + id + "\n	" + " name: " + name + "\n	" + " inputDir: " + inputDir + "\n	" + " outputDir: " + outputDir + "\n" 
    }
 }
 

@@ -1,0 +1,8 @@
+Mongo URI configured: mongodb://127.0.0.1:27017
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+App::processTagger :: INIT 
+App::process :: document: gate_export_to_json_output/pdo2.json
+App::process :: document: gate_export_to_json_output/pdo1.json
+App::process :: END 
