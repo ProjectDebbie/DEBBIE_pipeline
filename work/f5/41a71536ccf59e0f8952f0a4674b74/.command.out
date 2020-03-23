@@ -1,5 +1,0 @@
-Mongo URI configured: mongodb://127.0.0.1:27017
-App::processTagger :: INIT 
-App::process :: document: gate_export_to_json_output/pdo2.json
-App::process :: document: gate_export_to_json_output/pdo1.json
-App::process :: END 

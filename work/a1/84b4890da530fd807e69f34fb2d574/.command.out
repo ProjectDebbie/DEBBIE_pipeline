@@ -1,6 +1,0 @@
-App::processTagger :: INIT 
-App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/a1/84b4890da530fd807e69f34fb2d574/relevant_with_year/pdo2.txt
- Annotation document execution time  7169 milliseconds
-App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/a1/84b4890da530fd807e69f34fb2d574/relevant_with_year/pdo1.txt
- Annotation document execution time  1164 milliseconds
-App::process :: END 

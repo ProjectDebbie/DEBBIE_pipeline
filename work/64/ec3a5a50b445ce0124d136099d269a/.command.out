@@ -1,4 +1,0 @@
-App::processTagger :: INIT 
-App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/64/ec3a5a50b445ce0124d136099d269a/medical_materials_output/pdo1.xml
-App::process :: processing file : /home/jcorvi/projects/debbie/debbie-pipeline/work/64/ec3a5a50b445ce0124d136099d269a/medical_materials_output/pdo2.xml
-App::process :: END 
