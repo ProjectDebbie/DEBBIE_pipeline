@@ -3,7 +3,7 @@ Input: Biomaterial BioactiveSubstance Structure ManufacturedObject Application F
 Options: control = all
 Rule: delete_rule
 (
-{Biomaterial} | {BioactiveSubstance} | {Structure} | {ManufacturedObject} | {Application} | {Features} | {AsscoiatedBiologicalProcess} | {cell} | {Tissue} | {AdverseEffects} | {ResearchTechnique}
+{Biomaterial} | {BioactiveSubstance} | {Structure} | {ManufacturedObject} | {Application} | {Features} | {AsscoiatedBiologicalProcess} | {Cell} | {Tissue} | {AdverseEffects} | {ResearchTechnique}
 )
 :short_annotations_delete
 -->

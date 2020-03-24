@@ -1,0 +1,31 @@
+Imports: {
+import static gate.Utils.*;
+}
+Phase:secondphase
+Input: Lookup
+Options: control = appelt
+Rule: debbie_priority
+(
+  {Lookup.minorType == "DEB_ONTOLOGY"}
+) :debbie_ont
+-->
+{
+    gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("debbie_ont");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	gate.AnnotationSet  to_remove = outputAS.get(ann.getStartNode().getOffset(), ann.getEndNode().getOffset());
+ 	for (Annotation rem : to_remove) {
+ 		//remove only the stop word, this is for cases in where a stop word is inside a bigger term annotated
+ 		FeatureMap lookupFeatures = rem.getFeatures();
+ 	    Object source = lookupFeatures.get("SOURCE");
+ 		if(source!=null && source.toString().equals("UMLS")){
+ 		    System.out.println(source + " : " + stringFor(doc, rem));
+ 			if(ann.getStartNode().getOffset()<=rem.getStartNode().getOffset() && ann.getEndNode().getOffset()>=rem.getEndNode().getOffset()){
+ 				System.out.println(source + " will remove : " + stringFor(doc, rem));
+ 				outputAS.remove(rem);
+ 			}else{
+ 				System.out.println(source + " will not remove : " + stringFor(doc, rem));
+ 			}
+ 		}
+ 		
+ 	}
+}
