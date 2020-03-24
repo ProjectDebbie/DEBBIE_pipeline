@@ -1,4 +1,5 @@
 DEB_ONTOLOGY.lst:DEB_ONTOLOGY:DEB_ONTOLOGY
 iobc.lst:IOBC:IOBC
+ncit.lst:NCIT:NCIT
 npo.lst:NPO:NPO
 stop_words.lst:STOP_WORD:STOP_WORD
