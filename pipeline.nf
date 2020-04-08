@@ -62,6 +62,7 @@ params.folders_steps = [
 
 abstract_input_ch = Channel.fromPath( params.abstract_input_folder, type: 'dir' )
 
+debbie_classifier_output_folder=file(params.folders.debbie_classifier_output_folder)
 nlp_standard_preprocessing_output_folder=file(params.folders.nlp_standard_preprocessing_output_folder)
 umls_output_folder=file(params.folders.umls_output_folder)
 medical_materials_output_folder=file(params.folders.medical_materials_output_folder)
@@ -321,7 +322,7 @@ process debbie_classifier {
     
     script:
     """
-    python3 debbie_trained_classifier.py -i $input_debbie_classifier -o $debbie_classifier_output_folder
+    python3 debbie_trained_classifier.py
 	
     """
 }
