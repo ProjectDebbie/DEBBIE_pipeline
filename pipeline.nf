@@ -35,6 +35,8 @@ params.umls_tagger = [
 ]
 
 params.folders = [
+    //Output directory for debbie_classifier step
+	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output",
 	//Output directory for the nlp-standard preprocessing step
 	nlp_standard_preprocessing_output_folder: "${params.baseDir}/nlp_standard_preprocessing_output",
 	//Output directory for the umls tagger step
@@ -46,6 +48,8 @@ params.folders = [
 ]
 
 params.folders_steps = [
+    //Output directory for the debbie_classifier step
+	CLA: "${params.baseDir}/debbie_classifier_output",
 	//Output directory for the nlp-standard preprocessing step
 	PRE: "${params.baseDir}/nlp_standard_preprocessing_output",
 	//Output directory for the umls tagger step
@@ -307,15 +311,28 @@ ProcessPipelineParameters()
 PrintConfiguration()
 SaveParamsToFile()
 
+process debbie_classifier {
+    input:
+    file input_debbie_classifier from abstract_input_ch
+    
+    output:
+    val debbie_classifier_output_folder into debbie_classifier_output_folder_ch
+    
+    
+    script:
+    """
+    python3 debbie_trained_classifier.py -i $input_debbie_classifier -o $debbie_classifier_output_folder
+	
+    """
+}
+
 process nlp_standard_preprocessing {
     input:
-    file input_nlp_standard_preprocessing from abstract_input_ch
+    file input_nlp_standard_preprocessing from debbie_classifier_output_folder_ch
     
     output:
     val nlp_standard_preprocessing_output_folder into nlp_standard_preprocessing_output_folder_ch
     
-    //when:
-    //pipeline[0]=="ALL" || pipeline.contains("PRE")
     
     script:
     """
