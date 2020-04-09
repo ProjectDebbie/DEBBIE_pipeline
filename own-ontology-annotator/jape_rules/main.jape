@@ -1,6 +1,5 @@
 MultiPhase: Main
 Phases:
-debbie_priority
-label_mapping
 clean_short_words
+label_mapping
 stop_words

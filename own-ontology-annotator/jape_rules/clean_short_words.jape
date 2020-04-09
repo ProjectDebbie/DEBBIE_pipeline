@@ -1,9 +1,9 @@
 Phase:secondphase
-Input: Biomaterial BioactiveSubstance Structure ManufacturedObject Application Features AsscoiatedBiologicalProcess cell Tissue AdverseEffects ResearchTechnique
+Input: Lookup
 Options: control = all
 Rule: delete_rule
 (
-{Biomaterial} | {BioactiveSubstance} | {Structure} | {ManufacturedObject} | {Application} | {Features} | {AsscoiatedBiologicalProcess} | {Cell} | {Tissue} | {AdverseEffects} | {ResearchTechnique}
+{Lookup} 
 )
 :short_annotations_delete
 -->
