@@ -36,7 +36,7 @@ params.umls_tagger = [
 
 params.folders = [
     //Output directory for debbie_classifier step
-	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output",
+	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output_folder/",
 	//Output directory for the nlp-standard preprocessing step
 	nlp_standard_preprocessing_output_folder: "${params.baseDir}/nlp_standard_preprocessing_output",
 	//Output directory for the umls tagger step
@@ -83,9 +83,7 @@ class StepPipeline {
         this.outputDir = outputDir
    }
    
-   String toString(){
-     return "Step: \n	id: " + id + "\n	" + " name: " + name + "\n	" + " inputDir: " + inputDir + "\n	" + " outputDir: " + outputDir + "\n" 
-   }
+   
 }
 
 
@@ -322,7 +320,7 @@ process debbie_classifier {
     
     script:
     """
-    python3 debbie_trained_classifier.py
+    python3 /usr/src/app/debbie_trained_classifier.py -i $input_debbie_classifier -o $debbie_classifier_output_folder -w /usr/src/app
 	
     """
 }
@@ -337,6 +335,7 @@ process nlp_standard_preprocessing {
     
     script:
     """
+    echo $input_nlp_standard_preprocessing
     nlp-standard-preprocessing -i $input_nlp_standard_preprocessing -o $nlp_standard_preprocessing_output_folder -a BSC
 	
     """
@@ -388,7 +387,7 @@ process import_json_to_mongo {
     file input_import_json_to_mongo from gate_export_to_json_output_ch
     	
     """
-    import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://127.0.0.1:27017  -mongoDatabase debbie -collection abstract_annotated
+    import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://127.0.0.1:27017  -mongoDatabase DEBBIE -collection debbie_pipeline
 	
     """
 }

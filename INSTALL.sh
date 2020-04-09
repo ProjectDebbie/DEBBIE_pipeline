@@ -29,3 +29,5 @@ cd ..
 
 /home/jcorvi/nextflow_installation/nextflow run /home/jcorvi/projects/debbie/debbie-pipeline/pipeline.nf --inputDir /home/jcorvi/DEBBIE_DATA/pipeline_complete/relevant_with_year --baseDir /home/jcorvi/DEBBIE_DATA/pipeline_complete/results_12_03_2020/ --umls_config umls-annotation/config.properties
 
+#inb mongo
+#import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://reader:***REMOVED***@***REMOVED***:27017  -mongoDatabase DEBBIE -collection debbie_pipeline
