@@ -16,7 +16,7 @@ Rule: removeStopwords
  	for (Annotation rem : to_remove) {
  		//remove only the stop word, this is for cases in where a stop word is inside a bigger term annotated
  		if(ann.getStartNode().getOffset()==rem.getStartNode().getOffset() && ann.getEndNode().getOffset()==rem.getEndNode().getOffset() && !rem.getType().equals("Token") && !rem.getType().equals("Sentence")){
- 			System.out.println(rem.getType() + " : " + stringFor(doc, rem));
+ 			System.out.println("REMOVE STOP WORD " + rem.getType() + " : " + stringFor(doc, rem));
  			outputAS.remove(rem);
  		}
  	}

@@ -13,6 +13,7 @@ Rule: delete_rule
  	// get the offsets
 	Long length = lookup.lastNode().getOffset() - lookup.firstNode().getOffset();
 	if (length < 3)  {
+	    System.out.println("REMOVE SHORT WORD " + ann.getType() + " : " + stringFor(doc, ann));
 		inputAS.remove(ann);
  	}
 }
