@@ -327,7 +327,7 @@ process debbie_classifier {
 
 process nlp_standard_preprocessing {
     input:
-    file input_nlp_standard_preprocessing from abstract_input_ch
+    file input_nlp_standard_preprocessing from debbie_classifier_output_folder_ch
     
     output:
     val nlp_standard_preprocessing_output_folder into nlp_standard_preprocessing_output_folder_ch
