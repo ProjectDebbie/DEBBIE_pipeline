@@ -2,7 +2,6 @@
 
 
 log.info """
-The input directory is: ${params.inputDir}, Contains the pdf to be processed.
 Base directory to use: ${params.baseDir}, This directory is used together with the pipeline name (-name parameter) output the results.
 The output will be located at ${params.baseDir}/${workflow.runName}
 
@@ -36,6 +35,8 @@ params.umls_tagger = [
 
 params.folders = [
     //Output directory for debbie_classifier step
+	pubmed_retrieval_output_folder: "${params.baseDir}/pubmed_retrieval_output_folder/",
+    //Output directory for debbie_classifier step
 	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output_folder/",
 	//Output directory for the nlp-standard preprocessing step
 	nlp_standard_preprocessing_output_folder: "${params.baseDir}/nlp_standard_preprocessing_output",
@@ -48,6 +49,8 @@ params.folders = [
 ]
 
 params.folders_steps = [
+    //Output directory for the pubmed_retrieval step
+	PUBRET: "${params.baseDir}/pubmed_retrieval_output",
     //Output directory for the debbie_classifier step
 	CLA: "${params.baseDir}/debbie_classifier_output",
 	//Output directory for the nlp-standard preprocessing step
@@ -60,8 +63,9 @@ params.folders_steps = [
 	GATE_JSON: "${params.baseDir}/gate_export_to_json_output"
 ]
 
-abstract_input_ch = Channel.fromPath( params.abstract_input_folder, type: 'dir' )
+//abstract_input_ch = Channel.fromPath( params.abstract_input_folder, type: 'dir' )
 
+pubmed_retrieval_output_folder=file(params.folders.pubmed_retrieval_output_folder)
 debbie_classifier_output_folder=file(params.folders.debbie_classifier_output_folder)
 nlp_standard_preprocessing_output_folder=file(params.folders.nlp_standard_preprocessing_output_folder)
 umls_output_folder=file(params.folders.umls_output_folder)
@@ -310,9 +314,23 @@ ProcessPipelineParameters()
 PrintConfiguration()
 SaveParamsToFile()
 
+process pubmed_retrieval {
+    
+    output:
+    val pubmed_retrieval_output_folder into pubmed_retrieval_output_folder_ch
+    
+    
+    script:
+    """
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term 'polydioxanone'
+	
+    """
+}
+
+
 process debbie_classifier {
     input:
-    file input_debbie_classifier from abstract_input_ch
+    file input_debbie_classifier from pubmed_retrieval_output_folder_ch
     
     output:
     val debbie_classifier_output_folder into debbie_classifier_output_folder_ch
@@ -327,7 +345,7 @@ process debbie_classifier {
 
 process nlp_standard_preprocessing {
     input:
-    file input_nlp_standard_preprocessing from abstract_input_ch
+    file input_nlp_standard_preprocessing from debbie_classifier_output_folder_ch
     
     output:
     val nlp_standard_preprocessing_output_folder into nlp_standard_preprocessing_output_folder_ch
@@ -347,7 +365,7 @@ process umls_tagger {
    
     output:
     val umls_output_folder into umls_output_folder_ch
-    
+    	
     """
     umls-tagger -u $params.umls_tagger.instalation_folder -i $input_umls -o $umls_output_folder -a BSC -c $params.umls_tagger.config 
 	
@@ -361,7 +379,7 @@ process medical_materials {
     file input_medical_materials from umls_output_folder_ch
     output:
     val medical_materials_output_folder into medical_materials_output_folder_ch
-    
+    	
     """
     medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC
 	
@@ -375,7 +393,7 @@ process gate_to_json {
     
     output:
     val gate_export_to_json_output_folder into gate_export_to_json_output_ch
-    
+    	
     """
     gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder
 	
@@ -385,7 +403,7 @@ process gate_to_json {
 process import_json_to_mongo {
     input:
     file input_import_json_to_mongo from gate_export_to_json_output_ch
-   
+    	
     """
     import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://127.0.0.1:27017  -mongoDatabase DEBBIE -collection debbie_pipeline
 	

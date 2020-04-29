@@ -1,9 +1,9 @@
 Phase:secondphase
-Input: Biomaterial BioactiveSubstance Structure ManufacturedObject Application Features AsscoiatedBiologicalProcess cell Tissue AdverseEffects ResearchTechnique
+Input: Lookup
 Options: control = all
 Rule: delete_rule
 (
-{Biomaterial} | {BioactiveSubstance} | {Structure} | {ManufacturedObject} | {Application} | {Features} | {AsscoiatedBiologicalProcess} | {Cell} | {Tissue} | {AdverseEffects} | {ResearchTechnique}
+{Lookup} 
 )
 :short_annotations_delete
 -->
@@ -13,6 +13,7 @@ Rule: delete_rule
  	// get the offsets
 	Long length = lookup.lastNode().getOffset() - lookup.firstNode().getOffset();
 	if (length < 3)  {
+	    System.out.println("REMOVE SHORT WORD " + ann.getType() + " : " + stringFor(doc, ann));
 		inputAS.remove(ann);
  	}
 }
