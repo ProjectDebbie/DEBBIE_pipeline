@@ -6,7 +6,7 @@ Input: Lookup
 Options: control = appelt
 Rule: debbie_priority
 (
-  {Lookup.minorType == "DEB_ONTOLOGY"}
+  {Lookup.minorType == "DEB_ONTOLOGY"} | {Lookup.minorType == "IOBC"} | {Lookup.minorType == "NCIT"} | {Lookup.minorType == "NPO"} | {Lookup.minorType == "UBERON"}
 ) :debbie_ont
 -->
 {
@@ -18,12 +18,11 @@ Rule: debbie_priority
  		FeatureMap lookupFeatures = rem.getFeatures();
  	    Object source = lookupFeatures.get("SOURCE");
  		if(source!=null && source.toString().equals("UMLS")){
- 		    System.out.println(source + " : " + stringFor(doc, rem));
- 			if(ann.getStartNode().getOffset()<=rem.getStartNode().getOffset() && ann.getEndNode().getOffset()>=rem.getEndNode().getOffset()){
- 				System.out.println(source + " will remove : " + stringFor(doc, rem));
+ 		    if(ann.getStartNode().getOffset()<=rem.getStartNode().getOffset() && ann.getEndNode().getOffset()>=rem.getEndNode().getOffset()){
+ 				System.out.println("REMOVE WORD : " + stringFor(doc, rem) + " from UMLS SOURCE. For : " + stringFor(doc, ann) + ", source : " + ann.getFeatures().get("minorType"));
  				outputAS.remove(rem);
  			}else{
- 				System.out.println(source + " will not remove : " + stringFor(doc, rem));
+ 				System.out.println(" WILL NOT REMOVE WORD : " + stringFor(doc, rem) + " from UMLS SOURCE. The other word is : " + stringFor(doc, ann) + ", source : " + ann.getFeatures().get("minorType"));
  			}
  		}
  		

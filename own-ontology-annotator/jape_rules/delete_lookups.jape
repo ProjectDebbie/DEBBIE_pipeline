@@ -1,0 +1,14 @@
+Phase:secondphase
+Input: Lookup
+Options: control = all
+Rule: delete_rule
+(
+{Lookup}
+)
+:lookup
+-->
+{
+	gate.AnnotationSet lookup = (gate.AnnotationSet) bindings.get("lookup");
+ 	gate.Annotation ann = (gate.Annotation) lookup.iterator().next();
+ 	inputAS.remove(ann);
+}
