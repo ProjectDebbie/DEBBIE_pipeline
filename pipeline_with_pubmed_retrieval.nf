@@ -29,7 +29,7 @@ steps = [:]
 
 params.umls_tagger = [
 	instalation_folder: "/home/jcorvi/umls-2018AB-full/2018AB-full/MEDICAL_MATERIALS/2018AB/META",
-	config: "/home/jcorvi/projects/debbie/debbie-pipeline/umls-annotator/config.properties"
+	config: "/home/jcorvi/projects/debbie/debbie-pipeline/umls-annotator/config_MSH.properties"
 	//config: "${params.umls_config}"
 ]
 
@@ -322,7 +322,7 @@ process pubmed_retrieval {
     
     script:
     """
-    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term 'polydioxanone'
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term 'polydioxanone' -term2 'PDSII' -OR
 	
     """
 }
