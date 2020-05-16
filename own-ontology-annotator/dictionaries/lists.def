@@ -3,4 +3,6 @@ iobc.lst:IOBC:IOBC
 ncit.lst:NCIT:NCIT
 npo.lst:NPO:NPO
 Uberon.lst:UBERON:UBERON
+premedonto.lst:PREMEDONTO:PREMEDONTO
+chebi.lst:CHEBI:CHEBI
 stop_words.lst:STOP_WORD:STOP_WORD
