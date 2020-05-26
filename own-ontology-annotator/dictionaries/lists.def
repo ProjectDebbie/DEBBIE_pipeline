@@ -5,4 +5,6 @@ npo.lst:NPO:NPO
 Uberon.lst:UBERON:UBERON
 premedonto.lst:PREMEDONTO:PREMEDONTO
 chebi.lst:CHEBI:CHEBI
+obi.lst:OBI:OBI
+onto_tox.lst:ONTOTOX:ONTOTOX
 stop_words.lst:STOP_WORD:STOP_WORD
