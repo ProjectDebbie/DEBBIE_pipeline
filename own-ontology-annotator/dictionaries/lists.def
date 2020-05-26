@@ -7,4 +7,5 @@ premedonto.lst:PREMEDONTO:PREMEDONTO
 chebi.lst:CHEBI:CHEBI
 obi.lst:OBI:OBI
 onto_tox.lst:ONTOTOX:ONTOTOX
+gmdn.lst:GMDN:GMDN
 stop_words.lst:STOP_WORD:STOP_WORD
