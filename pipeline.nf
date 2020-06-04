@@ -1,18 +1,13 @@
 #!/usr/bin/env nextflow
 
+pipeline_version = 1.0
 
 log.info """
 The input directory is: ${params.inputDir}, Contains the pdf to be processed.
 Base directory to use: ${params.baseDir}, This directory is used together with the pipeline name (-name parameter) output the results.
 The output will be located at ${params.baseDir}/${workflow.runName}
-
-UMLS configuration path: ${params.umls_config}
 """
 .stripIndent()
-
-//set default parameters
-//pipeline process
-params.pipeline = "UMLS,MM"  
 
 
 //Configuration of the original pdf directory
@@ -28,9 +23,11 @@ pipeline = params.general.pipeline.split(',')
 
 steps = [:]
 
+pipeline_log = "${params.baseDir}/pipeline_log.log"
+
 params.umls_tagger = [
 	instalation_folder: "/home/jcorvi/umls-2018AB-full/2018AB-full/MEDICAL_MATERIALS/2018AB/META",
-	config: "/home/jcorvi/projects/debbie/debbie-pipeline/umls-annotator/config_MSH.properties"
+	config: "/home/jcorvi/projects/debbie/DEBBIE_pipeline/umls-annotator/config_MSH.properties"
 	//config: "${params.umls_config}"
 ]
 
@@ -151,7 +148,7 @@ void ProcessPipelineParameters(){
 	    int i = 1
 		for (s in pipeline){
 			if(steps.size()==0){
-		 		stepPip = new StepPipeline(i,s, abstract_input_folder, params.folders_steps[s])
+                                stepPip = new StepPipeline(i,s, abstract_input_folder, params.folders_steps[s])
 				print(stepPip)
 			}else{
 				stepPip = new StepPipeline(i,s,params.folders_steps[pipeline[i-2]], params.folders_steps[s])
@@ -185,7 +182,7 @@ void printSection(section, level = 1){
 void PrintConfiguration(){
     println ""
     println "=" * 34
-    println "ADEs Text-mining pipeline Configuration"
+    println "DEBBIE text-mining pipeline Configuration"
     println "=" * 34
 
     for (configSection in params) {
@@ -320,8 +317,14 @@ process debbie_classifier {
     
     script:
     """
+    exec >> $pipeline_log
+    echo "********************************************************************************************************************** "
+    echo `date`
+    echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
+    echo "Start debbie_classifier" 
     python3 /usr/src/app/debbie_trained_classifier.py -i $input_debbie_classifier -o $debbie_classifier_output_folder -w /usr/src/app
 	
+    echo "End debbie_classifier"   
     """
 }
 
@@ -335,9 +338,11 @@ process nlp_standard_preprocessing {
     
     script:
     """
-    echo $input_nlp_standard_preprocessing
+    exec >> $pipeline_log
+    echo "Start nlp_standard_preprocessing"
     nlp-standard-preprocessing -i $input_nlp_standard_preprocessing -o $nlp_standard_preprocessing_output_folder -a BSC
 	
+    echo "End nlp_standard_preprocessing"
     """
 }
 
@@ -349,8 +354,11 @@ process umls_tagger {
     val umls_output_folder into umls_output_folder_ch
     
     """
-    umls-tagger -u $params.umls_tagger.instalation_folder -i $input_umls -o $umls_output_folder -a BSC -c $params.umls_tagger.config 
+    exec >> $pipeline_log
+    echo "Start debbie-umls-annotation"
+    debbie-umls-annotation -i $input_umls -o $umls_output_folder -a BSC 
 	
+    echo "End debbie-umls-annotation"
     """
 }
 
@@ -363,8 +371,11 @@ process medical_materials {
     val medical_materials_output_folder into medical_materials_output_folder_ch
     
     """
+    exec >> $pipeline_log
+    echo "Start debbie-ontologies-annotation"
     medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC
-	
+
+    echo "End debbie-ontologies-annotation"	
     """
 }
 
@@ -377,8 +388,11 @@ process gate_to_json {
     val gate_export_to_json_output_folder into gate_export_to_json_output_ch
     
     """
+    exec >> $pipeline_log
+    echo "Start gate_to_json"
     gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder
 	
+    echo "End gate_to_json"
     """
 }
 
@@ -387,11 +401,19 @@ process import_json_to_mongo {
     file input_import_json_to_mongo from gate_export_to_json_output_ch
    
     """
-    import-json-to-mongo -i $input_import_json_to_mongo -c mongodb://127.0.0.1:27017  -mongoDatabase DEBBIE -collection debbie_pipeline
+    exec >> $pipeline_log
+    echo "Start import_json_to_mongo"
+    import-json-to-mongo -i $input_import_json_to_mongo -c xxxx -d xxxxx -collection xxxxx
 	
+    echo "End import_json_to_mongo"
     """
 }
 
 workflow.onComplete { 
 	println ("Workflow Done !!! ")
+        """
+        exec >> $pipeline_log
+        echo "End Pipeline Execution, Pipeline Version $pipeline_version, workflow name ${workflow.runName}"
+        echo "********************************************************************************************************************** "
+        """  
 }
