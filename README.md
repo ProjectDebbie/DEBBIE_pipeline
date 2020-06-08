@@ -16,7 +16,7 @@ The pipeline orchestrates the execution of the following components (some of the
 ## To Run the pipeline.  
 
 Open the run.sh file and configure the corresponding parameters when needed.
-Then to run the pipeline simple execute bash run.sh
+Then to run the pipeline simple execute **bash run.sh**
 
 ## Built With
 
