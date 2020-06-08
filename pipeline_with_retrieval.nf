@@ -3,12 +3,13 @@
 pipeline_version = 1.0
 
 log.info """
-This is the DEBBIE pipeline execution.
-  
+This is the DEBBIE pipeline execution.  
 Pubmed retrieval is used to download the abstracts. Be aware that the pubmed abstracts directory stores the pubmed retrieval, it's outside the DEBBIE base dire pipeline.
 The directory in which the pubmed is downloaded ${params.pubmedBaseDir}. 
 The DEBBIE base directory to use: ${params.baseDir}, This directory is used as a work directory of the pipeline, the output to each component of the pipeline will appear in this directory.
 The output will be located at ${params.baseDir}.
+Pipeline execution name: ${workflow.runName}
+Pipeline version: ${pipeline_version}
 
 """
 .stripIndent()
@@ -17,6 +18,19 @@ The output will be located at ${params.baseDir}.
 params.abstract_input_folder = 'None'
 params.baseDir = "${params.baseDir}"
 params.pubmedBaseDir = "${params.pubmedBaseDir}"
+
+db_uri="${params.db_uri}"
+db_name="${params.db_name}"
+db_collection="${params.db_collection}"
+
+log.info """
+The text-mining execution results will be stored in the provided database:
+Database Url: $db_uri
+Database name: $db_name
+Collection: $db_collection
+
+"""
+.stripIndent()
 
 params.general = [
     paramsout:          "${params.baseDir}/execution-results/params_${workflow.runName}.json",
@@ -440,7 +454,7 @@ process import_json_to_mongo {
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
-    import-json-to-mongo -i $input_import_json_to_mongo -c "mongodb://xxxx:xxxx@xxxxx:xxxx/?authSource=xxxxx&authMechanism=SCRAM-SHA-1" -d xxxxx -collection xxxxxx
+    import-json-to-mongo -i $input_import_json_to_mongo -c "$db_uri" -d $db_name -collection $db_collection
     echo "End import_json_to_mongo"
     """
 }
