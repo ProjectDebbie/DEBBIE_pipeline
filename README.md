@@ -12,6 +12,7 @@ The pipeline orchestrates the execution of the following components (some of the
 5. Conversion of the resulting gate files to .json and their deposition in the DEBBIE Mongo database
 
 ## Pipeline (Add image in here)
+![DEBBIE](Pipeline_overview.png)
 
 ## To Run the pipeline.  
 
