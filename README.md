@@ -16,33 +16,6 @@ The pipeline orchestrates the execution of the following components (some of the
 ## To Run the pipeline.  
 
 Open the run.sh file and configure the corresponding parameters when needed.
-
-#set pipeline name, by default it indicates the data and time
-pipeline_name=debbie_pipeline_`date '+%d-%m-%Y_%H_%M_%S'`
-#set the nextflow instalation
-nextflow_path="/home/user/nextflow_installation/nextflow"
-#set the pipeline file
-pipeline_path="/home/user/projects/debbie/DEBBIE_pipeline/pipeline_with_retrieval.nf"
-#set the pubmed abstracts home folder
-pubmed_base_dir="/home/user/pubmed/pubmed_abstracts/"
-#set the home/work dir of the pipeline
-base_dir="/home/user/DEBBIE_DATA/pipeline_complete/production/"`date '+%d-%m-%Y'`
-
-#Database connection details
-#set server and port
-db_server=xxxxxx
-db_port=xxxxxx
-#set user and password
-db_user=xxxxxx
-db_password=xxxxxx
-#set the database name
-db_name=xxxxxx
-#set the collection
-db_collection=xxxxxx
-#The complete mongo uri
-db_uri="mongodb://"$db_user":"$db_password"@"$db_server":"$db_port"/?authSource="$db_name"&authMechanism=SCRAM-SHA-1"
-
-
 Then to run the pipeline simple execute:
 bash run.sh
 
