@@ -11,7 +11,7 @@ The pipeline orchestrates the execution of the following components (some of the
 4. Gate-based annotation of the relevant abstracts with terms from the DEB ontology, UNLS semantic types and other manually-selected classes from open ontologies (eg. NPO, NCIT, UBERON) 
 5. Conversion of the resulting gate files to .json and their deposition in the DEBBIE Mongo database
 
-## Pipeline (Add image in here)
+## Pipeline overview 
 ![DEBBIE](Pipeline_overview.png)
 
 ## To Run the pipeline.  
