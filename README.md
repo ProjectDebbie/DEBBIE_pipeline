@@ -14,7 +14,7 @@ The pipeline orchestrates the execution of the following components (some of the
 ## Pipeline overview 
 ![DEBBIE](Pipeline_overview.png)
 
-## To Run the pipeline.  
+## To run the pipeline.  
 
 Open the run.sh file and configure the corresponding parameters when needed.
 Then to run the pipeline simple execute **bash run.sh**
