@@ -4,7 +4,7 @@ The debbie automated pipeline retrieves biomaterials abstracts from PubMed, anno
 
 ## Description 
 
-The pipeline orchestrates the execution of the following components (some of them are in separate repositories of DEBBIE):
+The pipeline orchestrates the execution of the following components (some of them are in separate GitHub repositories):
 1. Periodic abstract retrieval from PubMed
 2. Standardization of the abstract text
 3. Binary classification (relevant/Non-relevant to biomaterials) using an SVM implementation
