@@ -6,7 +6,7 @@ Input: Lookup
 Options: control = appelt
 Rule: debbie_priority
 (
-  {Lookup.minorType == "DEB_ONTOLOGY"} | {Lookup.minorType == "IOBC"} | {Lookup.minorType == "NCIT"} | {Lookup.minorType == "NPO"} | {Lookup.minorType == "UBERON"}
+  {Lookup.minorType == "DEB_ONTOLOGY"} | {Lookup.minorType == "IOBC"} | {Lookup.minorType == "NCIT"} | {Lookup.minorType == "NPO"} | {Lookup.minorType == "UBERON"} | {Lookup.minorType == "PREMEDONTO"} | {Lookup.minorType == "CHEBI"} | {Lookup.minorType == "OBI"} | {Lookup.minorType == "ONTOTOX"} | {Lookup.minorType == "GMDN"}
 ) :debbie_ont
 -->
 {
