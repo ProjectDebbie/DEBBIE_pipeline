@@ -25,14 +25,9 @@ steps = [:]
 
 pipeline_log = "${params.baseDir}/pipeline_log.log"
 
-params.umls_tagger = [
-	instalation_folder: "/home/jcorvi/umls-2018AB-full/2018AB-full/MEDICAL_MATERIALS/2018AB/META",
-	config: "/home/jcorvi/projects/debbie/DEBBIE_pipeline/umls-annotator/config_MSH.properties"
-	//config: "${params.umls_config}"
-]
 
 params.folders = [
-    //Output directory for debbie_classifier step
+        //Output directory for debbie_classifier step
 	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output_folder/",
 	//Output directory for the nlp-standard preprocessing step
 	nlp_standard_preprocessing_output_folder: "${params.baseDir}/nlp_standard_preprocessing_output",
@@ -45,7 +40,7 @@ params.folders = [
 ]
 
 params.folders_steps = [
-    //Output directory for the debbie_classifier step
+        //Output directory for the debbie_classifier step
 	CLA: "${params.baseDir}/debbie_classifier_output",
 	//Output directory for the nlp-standard preprocessing step
 	PRE: "${params.baseDir}/nlp_standard_preprocessing_output",
@@ -346,7 +341,7 @@ process nlp_standard_preprocessing {
     """
 }
 
-process umls_tagger {
+process debbie_umls_annotation {
     input:
     file input_umls from nlp_standard_preprocessing_output_folder_ch
    
@@ -364,7 +359,7 @@ process umls_tagger {
 
 
 
-process medical_materials {
+process debbie_onlology_annotation {
     input:
     file input_medical_materials from umls_output_folder_ch
     output:
@@ -403,7 +398,7 @@ process import_json_to_mongo {
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
-    import-json-to-mongo -i $input_import_json_to_mongo -c xxxx -d xxxxx -collection xxxxx
+    import-json-to-mongo -i $input_import_json_to_mongo -c "mongodb://***REMOVED***:***REMOVED***@***REMOVED***:27017/?authSource=DEBBIE&authMechanism=SCRAM-SHA-1" -d DEBBIE -collection pdo_11-06-2020
 	
     echo "End import_json_to_mongo"
     """

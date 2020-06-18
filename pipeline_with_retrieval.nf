@@ -15,34 +15,33 @@ Pipeline version: ${pipeline_version}
 .stripIndent()
 
 //Configuration of the original pdf directory
-params.abstract_input_folder = 'None'
-params.baseDir = "${params.baseDir}"
-params.pubmedBaseDir = "${params.pubmedBaseDir}"
-
-db_uri="${params.db_uri}"
-db_name="${params.db_name}"
-db_collection="${params.db_collection}"
-
-log.info """
-The text-mining execution results will be stored in the provided database:
-Database Url: $db_uri
-Database name: $db_name
-Collection: $db_collection
-
-"""
-.stripIndent()
+//params.abstract_input_folder = 'None'
 
 params.general = [
     paramsout:          "${params.baseDir}/execution-results/params_${workflow.runName}.json",
     resultout:          "${params.baseDir}/execution-results/results_${workflow.runName}.txt",
-    pipeline:			"${params.pipeline}"
+    baseDir:            "${params.baseDir}",
+    pubmedBaseDir:      "${params.pubmedBaseDir}",
 ]
 
-pipeline = params.general.pipeline.split(',')
+params.database = [
+    db_uri:             "${params.db_uri}",
+    db_name:            "${params.db_name}",
+    db_collection:      "${params.db_collection}"
+]
+
+log.info """
+The text-mining execution results will be stored in the provided database:
+Database Url: $params.database.db_uri
+Database name: $params.database.db_name
+Collection: $params.database.db_collection
+
+"""
+.stripIndent()
 
 steps = [:]
 
-pipeline_log = "${params.baseDir}/pipeline_with_retrieval.log"
+pipeline_log = "$params.general.baseDir/pipeline_with_retrieval.log"
 
 params.folders = [
         //Output directory for debbie_classifier step
@@ -61,24 +60,7 @@ params.folders = [
 	gate_export_to_json_output_folder: "${params.baseDir}/gate_export_to_json_output"
 ]
 
-params.folders_steps = [
-        //Output directory for the pubmed_retrieval step
-	PUBRET: "${params.pubmedBaseDir}/",
-        //Output directory for the pubmed_standardization step
-        PUBSTA: "${params.baseDir}/pubmed_standardized",
-        //Output directory for the debbie_classifier step
-        CLA: "${params.baseDir}/debbie_classifier_output",
-	//Output directory for the nlp-standard preprocessing step
-	PRE: "${params.baseDir}/nlp_standard_preprocessing_output",
-	//Output directory for the umls tagger step
-	UMLS: "${params.baseDir}/debbie_umls_annotation_output",
-	//Output directory for the cdisc_etox tagger step
-	MM: "${params.baseDir}/medical_materials_output",
-	//Output directory for export json
-	GATE_JSON: "${params.baseDir}/gate_export_to_json_output"
-]
-
-basedir_input_ch = Channel.fromPath(params.baseDir, type: 'dir' )
+basedir_input_ch = Channel.fromPath(params.general.baseDir, type: 'dir' )
 
 //files folder declaration for each component output 
 pubmed_retrieval_output_folder=file(params.folders.pubmed_retrieval_output_folder)
@@ -89,99 +71,7 @@ umls_output_folder=file(params.folders.umls_output_folder)
 medical_materials_output_folder=file(params.folders.medical_materials_output_folder)
 gate_export_to_json_output_folder=file(params.folders.gate_export_to_json_output_folder)
 
-basedir_input_folder = params.baseDir
-
-class StepPipeline {
-   int id;
-   String name;
-   int order;
-   String inputDir;
-   String outputDir;	
-   StepPipeline(id, name, inputDir, outputDir) {          
-        this.id = id
-        this.name = name
-        this.inputDir = inputDir
-        this.outputDir = outputDir
-   }   
-}
-
-void ProcessUserInputArguments(){
-    def toRemove = []
-    // Detect user inputed arguments.
-    // Param's values are all dictionaries, whose class is null
-    // User inputed arguments always(?) have classes associated
-    for (param in params) 
-        if (param.value.class != null)
-            toRemove.add(param.key)
-	// Transform the user inputed arguments into params
-    for (userArgument in toRemove) {
-		// Split the name into a list of entries, 
-        // which represent a hierarchy inside params
-        splittedArgument = userArgument.split('\\.')
-		// Traverse the hierarchy starting from params
-        curDict = params
-        partOfConfiguration = true
-		if (splittedArgument.size() > 1) {
-            int x = 0;
-            // For each hierarchy level in the hierarchy obtained (but last element)
-            for (; x < (splittedArgument.size() - 1); x++) {
-				// Get the current hierarchy level
-                hierarchy = splittedArgument[x]
-				// Check if the current hierarchy dict contains the current level as key
-                // This is useful to inform the user of misspelled arguments
-                if (curDict.containsKey(hierarchy)){
-                    if (curDict[hierarchy] != null && curDict[hierarchy].class == null){
-                        // Move deeper inside the hierarchy
-                        curDict = curDict[hierarchy]    
-                        continue  
-                    }
-                }
-
-                // If current hierarchy dict does not contain the current level, inform the user
-                println "[Config Wrapper] Argument \"" + userArgument + "\" is not part of the configuration"
-
-                // Reverse the flag params from containing wrong information
-                partOfConfiguration = false
-                break
-            }
-
-            if (x == splittedArgument.size() - 1) {
-                // Check if we have to change a value in params
-                if (partOfConfiguration && curDict.containsKey(splittedArgument[x])) {
-                    println "[Config Wrapper] " + userArgumALLent + " new value: " + params[userArgument] 
-                    curDict[splittedArgument[splittedArgument.size() - 1]] = params[userArgument]
-                } else {
-                    println "[Config Wrapper] Argument \"" + userArgument + "\" is not part of the configuration\n" +
-                            "                 \"" + splittedArgument[x] + "\" is not an element of \"" + splittedArgument[x - 1] + "\"" 
-                }
-            }
-        } 
-        else 
-            println "[Config Wrapper] Argument \"" + userArgument + "\" is not part of the configuration"
-        
-        params.remove(userArgument)
-    }
-}
-
-void ProcessPipelineParameters(){
-	print(pipeline)
-	if(pipeline!="ALL"){
-	    int i = 1
-		for (s in pipeline){
-			if(steps.size()==0){
-                                stepPip = new StepPipeline(i,s, basedir_input_folder, params.folders_steps[s])
-				print(stepPip)
-			}else{
-				stepPip = new StepPipeline(i,s,params.folders_steps[pipeline[i-2]], params.folders_steps[s])
-				print(stepPip)
-			}
-			steps.putAt(stepPip.name, stepPip)	
-			i=i+1
-		}	
-	}else{
-		print(pipeline)
-	}
-}
+basedir_input_folder = params.general.baseDir
 
 void printSection(section, level = 1){
     println (("  " * level) + "↳ " + section.key)
@@ -189,7 +79,7 @@ void printSection(section, level = 1){
     {
       for (element in section.value)
         {
-            printSection(element, level + 1)
+           printSection(element, level + 1)
         }
     }
     else {
@@ -205,10 +95,14 @@ void PrintConfiguration(){
     println "=" * 34
     println "DEBBIE text-mining pipeline Configuration"
     println "=" * 34
-
     for (configSection in params) {
-        printSection(configSection)
-        println "=" * 30
+          //println (configSection.getClass())     
+          if(configSection.key=="general" || configSection.key=="database" || configSection.key=="folders"){
+
+            printSection(configSection)
+            println "=" * 30
+          }
+       
     }
 
     println "\n"
@@ -321,12 +215,8 @@ def SaveParamsToFile() {
 
 
 //Execution Begin
-
-ProcessUserInputArguments()
-ProcessPipelineParameters()
 PrintConfiguration()
 SaveParamsToFile()
-
 
 //Workflow component Begins
 
@@ -427,7 +317,7 @@ process debbie_onlology_annotation {
     """
     exec >> $pipeline_log
     echo "Start debbie_onlology_annotation"
-    medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC
+    medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC -gt flexible
     echo "End debbie_onlology_annotation"
     """
 }
@@ -454,7 +344,7 @@ process import_json_to_mongo {
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
-    import-json-to-mongo -i $input_import_json_to_mongo -c "$db_uri" -d $db_name -collection $db_collection
+    import-json-to-mongo -i $input_import_json_to_mongo -c "$params.database.db_uri" -d $params.database.db_name -collection $params.database.db_collection
     echo "End import_json_to_mongo"
     """
 }
