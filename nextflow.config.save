@@ -1,6 +1,6 @@
 // General configuration used in all profiles
 manifest {
-  description = 'Biomaterials Pipeline' 
+  description = 'Medical Materials Pipeline' 
 }
 
 // Profiles configure nextflow depending on the environment (local, integration, live, etc.)
@@ -28,37 +28,37 @@ profiles {
 		
 		process {
 			withName: debbie_classifier{
-				container = "projectdebbie/classifier:release-1.0.1"
+				container = "projectdebbie/classifier:latest"
 			}
 		}
 		
 		process {
 			withName: nlp_standard_preprocessing{
-				container = "javicorvi/nlp-standard-preprocessing:1.2"                        
+				container = "javicorvi/nlp-standard-preprocessing:1.0"
 			}
 		}
 		
 		process {
 			withName: debbie_umls_annotation{
-				container = "projectdebbie/debbie_umls_annotation:release-1.0.3"
+				container = "projectdebbie/debbie_umls_annotation:release-1.0.0"
 			}
 		}
 		
 		process {
 			withName: debbie_onlology_annotation{
-				container = "projectdebbie/biomaterials-annotator:release-1.0.1"
+				container = "projectdebbie/own-ontology-annotator:release-1.0."
 			}
 		}
 		
 		process {
 			withName: gate_to_json{
-				container = "projectdebbie/gate_to_json:release-1.0.2"
+				container = "projectdebbie/gate_to_json:release-1.0.0"
 			}
 		}
 		
 		process {
 			withName: import_json_to_mongo{
-				container = "javicorvi/import-json-to-mongo:1.3"
+				container = "javicorvi/import-json-to-mongo:1.1"
 			}
 		}
 		
