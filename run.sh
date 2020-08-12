@@ -20,10 +20,10 @@ db_password=xxxxxx
 #set the database name
 db_name=xxxxxx
 #set the collection
-db_collection=xxxxxxx
+collection_prefix=xxxxx
 
 #The complete mongo uri
 db_uri="mongodb://"$db_user":"$db_password"@"$db_server":"$db_port"/?authSource="$db_name"&authMechanism=SCRAM-SHA-1"
 
 #command
-$nextflow_path run $pipeline_path --pubmedBaseDir $pubmed_base_dir --baseDir $base_dir --db_uri $db_uri --db_name $db_name --db_collection $db_collection -with-report $base_dir/report.html -with-trace -with-timeline $base_dir/timeline.html -name $pipeline_name
+$nextflow_path run $pipeline_path --pubmedBaseDir $pubmed_base_dir --baseDir $base_dir --db_uri $db_uri --db_name $db_name --collection_prefix $collection_prefix -with-report $base_dir/report.html -with-trace -with-timeline $base_dir/timeline.html -name $pipeline_name
