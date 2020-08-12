@@ -456,7 +456,7 @@ process import_json_to_mongo {
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
-    import-json-to-mongo -i $input_import_json_to_mongo -c "mongodb://OHakimi:deb2020..@mdb-login.bsc.es:27017/?authSource=DEBBIE&authMechanism=SCRAM-SHA-1" -d DEBBIE -collection debbie_silk
+    import-json-to-mongo -i $input_import_json_to_mongo -c "mongodb://xxxxxx:xxxxx..@xxxxxxxx/?authSource=DEBBIE&authMechanism=SCRAM-SHA-1" -d xxxxxxx -collection xxxxxxx
     echo "End import_json_to_mongo"
     """
 }
