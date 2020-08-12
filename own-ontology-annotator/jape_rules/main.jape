@@ -1,7 +1,0 @@
-MultiPhase: Main
-Phases:
-clean_short_words
-debbie_priority
-label_mapping
-stop_words
-delete_lookups
