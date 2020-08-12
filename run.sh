@@ -12,17 +12,18 @@ base_dir="/home/jcorvi/DEBBIE_DATA/pipeline_complete/production/"`date '+%d-%m-%
 
 #Database connection details
 #set server and port
-db_server=mdb-login.bsc.es
-db_port=27017
+db_server=xxxx
+db_port=xxxxx
 #set user and password
-db_user=OHakimi
-db_password=deb2020..
+db_user=xxxxx
+db_password=xxxxx
 #set the database name
-db_name=DEBBIE
-#set the collection
-db_collection=22_06_2020
+db_name=xxxxxx
+#set the collection prefix
+db_collection_prefix=xxxxx
+
 #The complete mongo uri
 db_uri="mongodb://"$db_user":"$db_password"@"$db_server":"$db_port"/?authSource="$db_name"&authMechanism=SCRAM-SHA-1"
 
 #command
-$nextflow_path run $pipeline_path --pubmedBaseDir $pubmed_base_dir --baseDir $base_dir --db_uri $db_uri --db_name $db_name --db_collection $db_collection -with-report $base_dir/report.html -with-trace -with-timeline $base_dir/timeline.html -name $pipeline_name
+$nextflow_path run $pipeline_path --pubmedBaseDir $pubmed_base_dir --baseDir $base_dir --db_uri $db_uri --db_name $db_name --db_collection_prefix $collection_prefix -with-report $base_dir/report.html -with-trace -with-timeline $base_dir/timeline.html -name $pipeline_name
