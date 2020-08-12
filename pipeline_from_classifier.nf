@@ -398,8 +398,7 @@ process import_json_to_mongo {
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
-    import-json-to-mongo -i $input_import_json_to_mongo -c "mongodb://***REMOVED***:***REMOVED***@***REMOVED***:27017/?authSource=DEBBIE&authMechanism=SCRAM-SHA-1" -d DEBBIE -collection pdo_11-06-2020
-	
+    import-json-to-mongo -i $input_import_json_to_mongo -c xxxxx -d xxxxx -collection xxxxx	
     echo "End import_json_to_mongo"
     """
 }

@@ -1,0 +1,60 @@
+// General configuration used in all profiles
+manifest {
+  description = 'Medical Materials Pipeline' 
+}
+
+// Profiles configure nextflow depending on the environment (local, integration, live, etc.)
+
+profiles {
+	standard {
+		
+		process {
+			withName: pubmed_retrieval{
+				container = "projectdebbie/pubmed_retrieval:latest"
+			}
+		}
+		
+		process {
+			withName: debbie_classifier{
+				container = "projectdebbie/classifier:release-1.0.0"
+			}
+		}
+		
+		process {
+			withName: nlp_standard_preprocessing{
+				container = "javicorvi/nlp-standard-preprocessing:1.0"
+			}
+		}
+		
+		process {
+			withName: umls_tagger{
+				container = "umls-tagger:1.1"
+			}
+		}
+		
+		process {
+			withName: medical_materials{
+				container = "projectdebbie/own-ontology-annotator:release-1.0.0"
+			}
+		}
+		
+		process {
+			withName: gate_to_json{
+				container = "projectdebbie/gate_to_json:release-1.0.0"
+			}
+		}
+		
+		process {
+			withName: import_json_to_mongo{
+				container = "javicorvi/import-json-to-mongo:1.1"
+			}
+		}
+		
+		docker {
+                  enabled = true
+                  runOptions= '--net=host'
+		}
+		
+	}
+}
+

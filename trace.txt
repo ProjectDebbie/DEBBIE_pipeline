@@ -1,0 +1,9 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	10/d410d8	10574	pubmed_retrieval (1)	COMPLETED	0	2020-06-22 18:40:58.923	6.4s	4s	0.0%	2.9 MB	5.4 MB	9.3 KB	301 B
+2	b1/3552dc	10851	pubmed_standardization (1)	COMPLETED	0	2020-06-22 18:41:05.330	1m 38s	1m 34s	0.0%	3 MB	5.4 MB	6.4 KB	29 B
+3	9c/512162	11846	debbie_classifier (1)	COMPLETED	0	2020-06-22 18:42:42.933	16m 55s	16m 53s	0.0%	3 MB	5.4 MB	6.4 KB	24 B
+4	ce/98e829	19718	nlp_standard_preprocessing (1)	COMPLETED	0	2020-06-22 18:59:37.508	4m 47s	284ms	891.4%	6.9 GB	17.7 GB	87.9 MB	593.2 MB
+5	01/4aa782	23156	debbie_umls_annotation (1)	COMPLETED	0	2020-06-22 19:04:24.389	1m 51s	106ms	786.3%	6.2 GB	17.7 GB	1.5 GB	772.4 MB
+6	d6/63171f	24853	debbie_onlology_annotation (1)	COMPLETED	0	2020-06-22 19:06:15.486	1m 6s	37ms	317.0%	3.2 GB	17.8 GB	1.3 GB	638.2 MB
+7	28/6122a2	25714	gate_to_json (1)	COMPLETED	0	2020-06-22 19:07:21.282	34.5s	12ms	232.1%	2.1 GB	17.7 GB	1.1 GB	11.4 MB
+8	08/814fb0	26318	import_json_to_mongo (1)	COMPLETED	0	2020-06-22 19:07:55.943	13.2s	10ms	169.5%	282 MB	17.7 GB	10 MB	66 KB
