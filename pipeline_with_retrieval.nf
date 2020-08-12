@@ -287,7 +287,7 @@ process nlp_standard_preprocessing {
     """
     exec >> $pipeline_log
     echo "Start nlp_standard_preprocessing"
-    nlp-standard-preprocessing -i $input_nlp_standard_preprocessing -o $nlp_standard_preprocessing_output_folder -a BSC
+    nlp-standard-preprocessing -i $input_nlp_standard_preprocessing -o $nlp_standard_preprocessing_output_folder -a BSC -t 8
     echo "End nlp_standard_preprocessing"
     """
 }
@@ -303,7 +303,7 @@ process debbie_umls_annotation {
     """
     exec >> $pipeline_log
     echo "Start debbie_umls_annotation"
-    debbie-umls-annotation -i $input_umls -o $umls_output_folder -a BSC
+    debbie-umls-annotation -i $input_umls -o $umls_output_folder -a BSC -gt flexible -t 1
     echo "End debbie_umls_annotation"
     """
 }
@@ -317,7 +317,7 @@ process debbie_onlology_annotation {
     """
     exec >> $pipeline_log
     echo "Start debbie_onlology_annotation"
-    medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC -gt flexible
+    medical-materials -i $input_medical_materials -o $medical_materials_output_folder -a BSC -gt flexible -t 1
     echo "End debbie_onlology_annotation"
     """
 }
