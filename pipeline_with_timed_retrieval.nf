@@ -6,6 +6,7 @@ log.info """
 This is the DEBBIE pipeline execution.  
 The DEBBIE base directory to use: ${params.baseDir}, This directory is used as a work directory of the pipeline, the output to each component of the pipeline will appear in this directory.
 At a first step an specific pubmed retrieval query is executed to download a set of abstracts.
+Pubmed Query Search: ${params.searchQuery}.
 The output will be located at ${params.baseDir}.
 Pipeline execution name: ${workflow.runName}
 Pipeline version: ${pipeline_version}
@@ -19,6 +20,7 @@ params.general = [
     paramsout:          "${params.baseDir}/execution-results/params_${workflow.runName}.json",
     resultout:          "${params.baseDir}/execution-results/results_${workflow.runName}.txt",
     baseDir:            "${params.baseDir}",
+    searchQuery:        "${params.searchQuery}"
 ]
 
 params.database = [
@@ -228,7 +230,7 @@ process pubmed_timed_retrieval {
     echo `date`
     echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
     echo "Start pubmed_timed_retrieval"
-    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term 'silk'
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term $params.general.searchQuery
     echo "End pubmed_timed_retrieval"
     """
 }
