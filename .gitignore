@@ -69,3 +69,4 @@ work/
 /.nextflow.log.7
 /.nextflow.log.8
 /.nextflow.log.9
+trace.*
