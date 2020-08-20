@@ -70,3 +70,6 @@ work/
 /.nextflow.log.8
 /.nextflow.log.9
 trace.*
+
+run.sh
+run_pubmed_with_timed_retrieval.sh
