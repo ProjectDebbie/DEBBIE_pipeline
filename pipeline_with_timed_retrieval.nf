@@ -230,7 +230,7 @@ process pubmed_timed_retrieval {
     echo `date`
     echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
     echo "Start pubmed_timed_retrieval"
-    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -term $params.general.searchQuery
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -q $params.general.searchQuery
     echo "End pubmed_timed_retrieval"
     """
 }
