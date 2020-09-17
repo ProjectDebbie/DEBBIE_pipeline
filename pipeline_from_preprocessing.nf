@@ -3,7 +3,7 @@
 pipeline_version = 1.0
 
 log.info """
-The input directory is: ${params.inputDir}, Contains the pdf to be processed.
+The input directory is: ${params.inputDir}, Contains the files to be processed.
 Base directory to use: ${params.baseDir}, This directory is used together with the pipeline name (-name parameter) output the results.
 The output will be located at ${params.baseDir}.
 Pipeline execution name: ${workflow.runName}
@@ -41,9 +41,7 @@ pipeline_log = "${params.baseDir}/pipeline_from_classifier.log"
 
 
 params.folders = [
-        //Output directory for debbie_classifier step
-	debbie_classifier_output_folder: "${params.baseDir}/debbie_classifier_output_folder/",
-	//Output directory for the nlp-standard preprocessing step
+        //Output directory for the nlp-standard preprocessing step
 	nlp_standard_preprocessing_output_folder: "${params.baseDir}/nlp_standard_preprocessing_output",
 	//Output directory for the umls tagger step
 	umls_output_folder: "${params.baseDir}/umls_output",
@@ -55,7 +53,6 @@ params.folders = [
 
 abstract_input_ch = Channel.fromPath( params.inputDir, type: 'dir' )
 
-debbie_classifier_output_folder=file(params.folders.debbie_classifier_output_folder)
 nlp_standard_preprocessing_output_folder=file(params.folders.nlp_standard_preprocessing_output_folder)
 umls_output_folder=file(params.folders.umls_output_folder)
 medical_materials_output_folder=file(params.folders.medical_materials_output_folder)
@@ -210,37 +207,19 @@ SaveParamsToFile()
 
 //Workflow component Begins
 
-process debbie_classifier {
+process nlp_standard_preprocessing {
     input:
-    file input_debbie_classifier from abstract_input_ch
-    
+    file input_nlp_standard_preprocessing from abstract_input_ch
+
     output:
-    val debbie_classifier_output_folder into debbie_classifier_output_folder_ch
-    
-    
+    val nlp_standard_preprocessing_output_folder into nlp_standard_preprocessing_output_folder_ch
+
     script:
     """
     exec >> $pipeline_log
     echo "********************************************************************************************************************** "
     echo `date`
     echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
-    echo "Start debbie_classifier" 
-    python3 /usr/src/app/debbie_trained_classifier.py -i $input_debbie_classifier -o $debbie_classifier_output_folder -w /usr/src/app
-    echo "End debbie_classifier"   
-    """
-}
-
-process nlp_standard_preprocessing {
-    input:
-    file input_nlp_standard_preprocessing from debbie_classifier_output_folder_ch
-
-    output:
-    val nlp_standard_preprocessing_output_folder into nlp_standard_preprocessing_output_folder_ch
-
-
-    script:
-    """
-    exec >> $pipeline_log
     echo "Start nlp_standard_preprocessing"
     nlp-standard-preprocessing -i $input_nlp_standard_preprocessing -o $nlp_standard_preprocessing_output_folder -a BSC -t 8
     echo "End nlp_standard_preprocessing"
