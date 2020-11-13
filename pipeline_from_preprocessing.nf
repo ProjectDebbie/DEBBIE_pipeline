@@ -11,7 +11,6 @@ Pipeline version: ${pipeline_version}
 """
 .stripIndent()
 
-
 //Configuration of the original pdf directory
 
 params.general = [
