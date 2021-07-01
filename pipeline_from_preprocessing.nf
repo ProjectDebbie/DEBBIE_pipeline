@@ -240,7 +240,7 @@ process debbie_umls_annotation {
     """
 }
 
-process debbie_onlology_annotation {
+process debbie_dictionary_annotation {
     input:
     file input_medical_materials from umls_output_folder_ch
     output:
