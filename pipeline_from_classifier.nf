@@ -68,7 +68,7 @@ void printSection(section, level = 1){
     if (section.value.class == null)
     {
       for (element in section.value)
-        {
+        {debbie_onlology_annotation
            printSection(element, level + 1)
         }
     }
@@ -262,7 +262,7 @@ process debbie_umls_annotation {
     """
 }
 
-process debbie_onlology_annotation {
+process debbie_dictionary_annotation {
     input:
     file input_medical_materials from umls_output_folder_ch
     output:
