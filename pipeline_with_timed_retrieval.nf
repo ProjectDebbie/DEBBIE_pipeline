@@ -249,7 +249,7 @@ process debbie_classifier {
     
     output:
     val debbie_classifier_output_folder into debbie_classifier_output_folder_ch
-    
+    val debbie_classifier_output_folder into debbie_classifier_output_folder_ch_2    
     
     script:
     """
@@ -310,14 +310,15 @@ process debbie_onlology_annotation {
 process gate_to_json {
     input:
     file input_gate_to_json from medical_materials_output_folder_ch
-
+    file input_metadata from debbie_classifier_output_folder_ch_2 
+   
     output:
     val gate_export_to_json_output_folder into gate_export_to_json_output_ch
 
     """
     exec >> $pipeline_log
     echo "Start gate_to_json"
-    gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder -a
+    gate_to_json -i $input_gate_to_json -im $input_metadata -o $gate_export_to_json_output_folder -a
     echo "End gate_to_json"
     """
 }
