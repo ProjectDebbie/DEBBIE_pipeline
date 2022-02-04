@@ -8,6 +8,8 @@ The DEBBIE base directory to use: ${params.baseDir}, This directory is used as a
 At a first step an specific pubmed retrieval query is executed to download a set of abstracts.
 Pubmed Query Search: ${params.searchQuery}.
 The output will be located at ${params.baseDir}.
+The pubmedRegistryFiler, mantain a registry of the processed file for update the database with the last published documents, is located at ${params.pubmedRegistryFile}. 
+The reldate is ${params.pubmedRelDate} days only abstract added in the past days will be returned.
 Pipeline execution name: ${workflow.runName}
 Pipeline version: ${pipeline_version}
 """
@@ -20,7 +22,9 @@ params.general = [
     paramsout:          "${params.baseDir}/execution-results/params_${workflow.runName}.json",
     resultout:          "${params.baseDir}/execution-results/results_${workflow.runName}.txt",
     baseDir:            "${params.baseDir}",
-    searchQuery:        "${params.searchQuery}"
+    pubmedRegistryFile: "${params.pubmedRegistryFile}",  
+    searchQuery:        "${params.searchQuery}",
+    pubmedRelDate:      "${params.pubmedRelDate}"
 ]
 
 params.database = [
@@ -66,6 +70,10 @@ nlp_standard_preprocessing_output_folder=file(params.folders.nlp_standard_prepro
 umls_output_folder=file(params.folders.umls_output_folder)
 medical_materials_output_folder=file(params.folders.medical_materials_output_folder)
 gate_export_to_json_output_folder=file(params.folders.gate_export_to_json_output_folder)
+
+
+pubmed_reldate=params.general.pubmedRelDate
+pubmed_registry_file=params.general.pubmedRegistryFile
 
 basedir_input_folder = params.general.baseDir
 
@@ -230,7 +238,7 @@ process pubmed_timed_retrieval {
     echo `date`
     echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
     echo "Start pubmed_timed_retrieval"
-    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -r $pubmed_registry_file -d $pubmed_reldate
     echo "End pubmed_timed_retrieval"
     """
 }
