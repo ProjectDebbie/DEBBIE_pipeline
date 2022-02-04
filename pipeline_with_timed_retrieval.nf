@@ -230,7 +230,7 @@ process pubmed_timed_retrieval {
     echo `date`
     echo "Start Pipeline Execution, Pipeline Version $pipeline_version, workflow name: ${workflow.runName} "
     echo "Start pubmed_timed_retrieval"
-    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder -q $params.general.searchQuery
+    python3 /usr/src/app/pubmed_timed_retrieval.py -o $pubmed_retrieval_output_folder
     echo "End pubmed_timed_retrieval"
     """
 }
@@ -309,7 +309,7 @@ process gate_to_json {
     """
     exec >> $pipeline_log
     echo "Start gate_to_json"
-    gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder
+    gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder -a
     echo "End gate_to_json"
     """
 }
