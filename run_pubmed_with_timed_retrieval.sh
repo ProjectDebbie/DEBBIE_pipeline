@@ -1,4 +1,11 @@
 #!/bin/bash
+
+# Show env vars
+grep -v '^#' .env
+
+# Export env vars
+export $(grep -v '^#' .env | xargs)
+
 #set pipeline name
 pipeline_name=debbie_pipeline_`date '+%d-%m-%Y_%H_%M_%S'`
 #set the nextflow instalation
@@ -17,15 +24,15 @@ searchQuery="((((((((Biomedical and dental materials[MeSH Terms]) OR (Prostheses
 
 #Database connection details
 #set server and port
-db_server=xxxxx
-db_port=xxxxx
+db_server="${DB_SERVER}"
+db_port="${DB_PORT}"
 #set user and password
-db_user=xxxxx
-db_password=xxxx
+db_user="${DB_USER}"
+db_password="${DB_PASSWORD}"
 #set the database name
-db_name=xxxxx
+db_name="${DB_NAME}"
 #set the collection prefix
-db_collection_prefix=xxxxxx
+db_collection_prefix="${DB_COLLECTION_PREFIX}"
 
 #The complete mongo uri
 db_uri="mongodb://"$db_user":"$db_password"@"$db_server":"$db_port"/?authSource="$db_name"&authMechanism=SCRAM-SHA-1"
