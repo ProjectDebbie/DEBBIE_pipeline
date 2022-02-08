@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-pipeline_version = 1.0
+pipeline_version = 2.0
 
 log.info """
 This is the DEBBIE pipeline execution.  
