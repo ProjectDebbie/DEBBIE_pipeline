@@ -68,7 +68,7 @@ void printSection(section, level = 1){
     if (section.value.class == null)
     {
       for (element in section.value)
-        {debbie_onlology_annotation
+        {
            printSection(element, level + 1)
         }
     }
@@ -286,7 +286,7 @@ process gate_to_json {
     """
     exec >> $pipeline_log
     echo "Start gate_to_json"
-    gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder
+    gate_to_json -i $input_gate_to_json -o $gate_export_to_json_output_folder -a BSC
     echo "End gate_to_json"
     """
 }

@@ -293,7 +293,7 @@ process debbie_umls_annotation {
     """
 }
 
-process debbie_onlology_annotation {
+process debbie_dictionary_annotation {
     input:
     file input_medical_materials from umls_output_folder_ch
     output:
@@ -318,7 +318,7 @@ process gate_to_json {
     """
     exec >> $pipeline_log
     echo "Start gate_to_json"
-    gate_to_json -i $input_gate_to_json -im $input_metadata -o $gate_export_to_json_output_folder -a
+    gate_to_json -i $input_gate_to_json -im $input_metadata -o $gate_export_to_json_output_folder -a BSC
     echo "End gate_to_json"
     """
 }
