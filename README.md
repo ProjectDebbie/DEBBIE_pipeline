@@ -38,6 +38,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE](LICENSE) file for details
 
+## Citing
+ * Corvi, J., McKitrick, A., Fernández, J., Fuenteslópez, C., Gelpi, J., Ginebra, M.-P., Capella-Guitierrez, S., Hakimi, O. DEBBIE: the open access database of experimental scaffolds and biomaterials with an automated information retrieval pipeline. Manuscript in preparation (2022).
+
+* Corvi, J., Fuenteslópez, C., Fernández, J., Gelpi, J., Ginebra, M.-P., Capella-Guitierrez, S., Hakimi, O. The biomaterials annotator: a systemfor ontology-based concept annotation of biomaterials text. In:Proceedings of the Second Workshop on Scholarly DocumentProcessing, pp. 36–48. Association for Computational Linguistics,Online (2021). https://www.aclweb.org/anthology/2021.sdp-1.5
+
+* Hakimi, O., Gelpi, J., Krallinger, M., Curi, F., Repchevsky, D., Ginebra, M.-P. The devices, experimental scaffolds, and biomaterials ontology (deb): A tool for mapping, annotation, and analysis of biomaterials’ data. Adv. Funct. Mater. (2020)
+
 
 ## Funding
 <img align="left" width="75" height="50" src="eu_emblem.png"> This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 751277
