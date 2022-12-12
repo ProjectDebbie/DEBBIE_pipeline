@@ -1,23 +1,25 @@
 #!/bin/bash
 
 # Show env vars
-grep -v '^#' /home/jcorvi/projects/debbie/DEBBIE_pipeline/.env
+grep -v '^#' /home/ubuntu/debbie/DEBBIE_pipeline/.env
 
 # Export env vars
-export $(grep -v '^#' /home/jcorvi/projects/debbie/DEBBIE_pipeline/.env | xargs)
+export $(grep -v '^#' /home/ubuntu/debbie/DEBBIE_pipeline/.env | xargs)
 
-echo $PWD > /home/jcorvi/file_2.txt
+echo $PWD > /home/ubuntu/debbie/file.txt
 
 #set pipeline name
 pipeline_name=debbie_pipeline_`date '+%d-%m-%Y_%H_%M_%S'`
 #set the nextflow instalation
-nextflow_path="/home/jcorvi/nextflow/nextflow"
+nextflow_path="/home/ubuntu/nextflow"
 #set the pipeline file
-pipeline_path="/home/jcorvi/projects/debbie/DEBBIE_pipeline/pipeline_with_timed_retrieval.nf"
+#pipeline_path="/home/ubuntu/debbie/DEBBIE_pipeline/pipeline_pro.nf"
+pipeline_path="/home/ubuntu/debbie/DEBBIE_pipeline/pipeline_with_timed_retrieval.nf"
+
 #set the home/work dir of the pipeline
-base_dir="/home/jcorvi/DEBBIE_DATA/pipeline_complete/production_with_mesh_search/"`date '+%d-%m-%Y'`
+base_dir="/home/ubuntu/debbie/execution-data/production/"`date '+%d-%m-%Y'`
 #Registry file for processed abstracts. To avoid duplication of downloads during the update of the database.
-pubmedRegistryFile="/home/jcorvi/DEBBIE_DATA/pipeline_complete/production_with_mesh_search/debbie_standardization_list_files_processed.dat"
+pubmedRegistryFile="/home/ubuntu/debbie/execution-data/production/debbie_standardization_list_files_processed.dat"
 pubmedRelDate=60
 #quert to search in pubmed
 searchQuery="((((((((Biomedical and dental materials[MeSH Terms]) OR (Prostheses and implants[MeSH Terms])) OR (Materials testing[MeSH Terms])) OR (Tissue engineering[MeSH Terms])) OR (Tissue scaffolds[MeSH Terms])) OR (Equipment safety[MeSH Terms])) OR (Medical device recalls[MeSH Terms])) OR (Biomaterials)) OR (Cell scaffolds)"

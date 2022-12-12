@@ -1,6 +1,7 @@
 #!/usr/bin/env nextflow
 
-pipeline_version = 2.0
+pipeline_version = 3.0
+nextflow.enable.dsl=1
 
 log.info """
 This is the DEBBIE pipeline execution.  
@@ -327,6 +328,8 @@ process import_json_to_mongo {
     input:
     file input_import_json_to_mongo from gate_export_to_json_output_ch
 
+    output:
+    stdout result
     """
     exec >> $pipeline_log
     echo "Start import_json_to_mongo"
@@ -334,6 +337,25 @@ process import_json_to_mongo {
     echo "End import_json_to_mongo"
     """
 }
+
+process debbie_preprocess_collections {
+    input:
+    val result   
+    
+    """
+    #exec >> $pipeline_log
+    echo "Start debbie_preprocess_collections"
+    python3 /usr/src/app/process_terms.py -db "$params.database.db_uri" -j $params.db_collection_prefix
+    echo "End debbie_preprocess_collections"
+    """
+}
+
+
+
+//workflow{
+//  pubmed_timed_retrieval | debbie_classifier  | nlp_standard_preprocessing | debbie_umls_annotation  | debbie_dictionary_annotation   | gate_to_json  | import_json_to_mongo  | debbie_preprocess_collections 	
+//}
+
 
 workflow.onComplete {
         println ("Workflow Done !!! ")
