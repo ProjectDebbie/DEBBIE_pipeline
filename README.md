@@ -2,7 +2,7 @@
 
 # debbie-pipeline 
 
-The debbie automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets (and in particular DEB (The Device, Experimental scaffolds and medical Device ontology) and MESH, and deposits the annotated abstracts in a NoSQL database. The database search page is: https://debbie.bsc.es/search/.
+The debbie automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets (and in particular DEB (The Device, Experimental scaffolds and medical Device ontology) and MESH, and deposits the annotated abstracts in a NoSQL database. DEBBIE is available at https://debbie.bsc.es/search/.  For more information about DEBBIE please visit the documantetion site at https://projectdebbie.github.io/.
 
 ## Description 
 
